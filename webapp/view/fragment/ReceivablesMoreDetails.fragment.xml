@@ -1,0 +1,24 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+		<core:ExtensionPoint name="ExtReceivablesMoreDetails">
+	<!-- Extends the ReceivablesAdditionalDetails fragment -->
+	<QuickView id="ReceivablesQuickView" afterClose="afterClose" afterOpen="afterOpen"
+		busy="{= ${cardModel>/open} &amp;&amp; ${cardModel>/loading}}" placement="Auto">
+		<QuickViewPage description="" header="{i18n>xtit.ReferenceAccInformation}" id="ReceivableDetailsPage" title="">
+			<QuickViewGroup id="refernceAccountGroup">
+			<QuickViewGroupElement id="accountHolderElement" label="{i18n>xfld.accountHolder}" value="{moreDetailsModel>/HolderName}"></QuickViewGroupElement>
+					<QuickViewGroupElement id="countryKeyElement" label="{i18n>xfld.countryKey}" value="{moreDetailsModel>/BkCountryCode}"></QuickViewGroupElement>
+					<QuickViewGroupElement id="bankKeyElement" label="{i18n>xfld.bankKey}" value="{moreDetailsModel>/BkRoutingID}"></QuickViewGroupElement>
+					<QuickViewGroupElement id="accountNumberElement" label="{i18n>xfld.accountNumber}" value="{moreDetailsModel>/ID}"></QuickViewGroupElement>
+					<QuickViewGroupElement id="ibanElement" label="{i18n>xfld.iban}" value="{moreDetailsModel>/StandardID}"></QuickViewGroupElement>	
+			</QuickViewGroup>
+			<QuickViewGroup id="referencesGroup">
+					<QuickViewGroupElement id="mandateIDElement" label="{i18n>xfld.mandateID}" value="{moreDetailsModel>/DirectDebitMandtID}"></QuickViewGroupElement>
+					<QuickViewGroupElement id="creditorIDElement" label="{i18n>xfld.creditorID}" value="{moreDetailsModel>/DirectDebitMandtCrdtrPtyID}"></QuickViewGroupElement>
+				</QuickViewGroup>
+				<QuickViewGroup id="paymAdvInfo">
+					<QuickViewGroupElement id="pymtTrnsInstName" label="{i18n>xfld.type}" value="{moreDetailsModel>/PymtTrnInstrnTypeName}"></QuickViewGroupElement>
+				</QuickViewGroup>
+		</QuickViewPage>
+	</QuickView>
+	</core:ExtensionPoint>
+</core:FragmentDefinition>

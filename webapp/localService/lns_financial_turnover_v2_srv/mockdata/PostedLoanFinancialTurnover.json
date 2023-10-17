@@ -1,0 +1,258 @@
+[{
+
+	"OrdinalNumberValue": 1,
+	"BusinessSystemID":  "F6D_100",
+	"BkAcctIntID":"16A68B51D7301EE78DC88CDCD4B1A21C",
+	"BkAcctIntIDSchmAgcyID": "310",
+	"DueDate": "/Date(1543648836000)/",
+	"PaymentDate": "/Date(1543648836000)/",
+	"ValueDate":"/Date(1543648836000)/",
+	"DebitAmount":{   
+			"Content": "200.00",
+            "Currency": "EUR"
+	},
+	"CreditAmount":{
+		    "Content": "0.00",
+            "Currency": "EUR"
+	},
+	"PrenoteDebitAmount": {
+		    "Content": "0.00",
+            "Currency": ""
+	},
+	"PrenoteCreditAmount":{
+			"Content": "0.00",
+            "Currency": ""
+        },
+	"BankAccountBalanceTypeCode":"L033",
+	"BankAccountBalanceTypeName": "Charge: Owed",
+	"BankAccountBillingItemID": "42112"
+	
+},
+{
+	"OrdinalNumberValue": 2,
+	"BusinessSystemID":  "F6D_100",
+	"BkAcctIntID":"16A68B51D7301EE78DC88CDCD4B1A21C",
+	"BkAcctIntIDSchmAgcyID": "310",
+	"DueDate": "/Date(1575184836000)/",
+	"PaymentDate": "/Date(1575184836000)/",
+	"ValueDate":"/Date(1575184836000)/",
+	"DebitAmount":{   
+			"Content": "10000.00",
+            "Currency": "EUR"
+	},
+	"CreditAmount":{
+		    "Content": "0.00",
+            "Currency": "EUR"
+	},
+	"PrenoteDebitAmount": {
+		    "Content": "0.00",
+            "Currency": ""
+	},
+	"PrenoteCreditAmount":{
+			"Content": "0.00",
+            "Currency": ""
+        },
+	"BankAccountBalanceTypeCode":"L101",
+	"BankAccountBalanceTypeName": "Payment: Disbursement",
+	"BankAccountBillingItemID": ""
+	},
+{
+	"OrdinalNumberValue": 3,
+	"BusinessSystemID":  "F6D_100",
+	"BkAcctIntID":"16A68B51D7301EE78DC88CDCD4B1A21C",
+	"BkAcctIntIDSchmAgcyID": "310",
+	"DueDate": "/Date(1546413636000)/",
+	"PaymentDate": "/Date(1546413636000)/",
+	"ValueDate":"/Date(1546413636000)/",
+	"DebitAmount":{   
+			"Content": "0.00",
+            "Currency": "EUR"
+	},
+	"CreditAmount":{
+		    "Content": "200.00",
+            "Currency": "EUR"
+	},
+	"PrenoteDebitAmount": {
+		    "Content": "0.00",
+            "Currency": ""
+	},
+	"PrenoteCreditAmount":{
+			"Content": "0.00",
+            "Currency": ""
+        },
+	"BankAccountBalanceTypeCode":"L136",
+	"BankAccountBalanceTypeName": "Payt: Charge Offs.Receiv",
+	"BankAccountBillingItemID": ""
+	
+},
+{
+	"OrdinalNumberValue": 4,
+	"BusinessSystemID":  "F6D_100",
+	"BkAcctIntID":"16A68B51D7301EE78DC88CDCD4B1A21C",
+	"BkAcctIntIDSchmAgcyID": "310",
+	"DueDate": "/Date(1549092036000)/",
+	"PaymentDate": "/Date(1549092036000)/",
+	"ValueDate":"/Date(1549092036000)/",
+	"DebitAmount":{   
+			"Content": "105.00",
+            "Currency": "EUR"
+	},
+	"CreditAmount":{
+		    "Content": "0.00",
+            "Currency": "EUR"
+	},
+	"PrenoteDebitAmount": {
+		    "Content": "0.00",
+            "Currency": ""
+	},
+	"PrenoteCreditAmount":{
+			"Content": "0.00",
+            "Currency": ""
+        },
+	"BankAccountBalanceTypeCode":"L033",
+	"BankAccountBalanceTypeName": "Charge: Owed",
+	"BankAccountBillingItemID": "42114"
+},
+{
+	"OrdinalNumberValue": 5,
+	"BusinessSystemID":  "F6D_100",
+	"BkAcctIntID":"16A68B51D7301EE78DC88CDCD4B1A21C",
+	"BkAcctIntIDSchmAgcyID": "310",
+	"DueDate": "/Date(1554189636000)/",
+	"PaymentDate": "/Date(1554189636000)/",
+	"ValueDate":"/Date(1554189636000)/",
+	"DebitAmount":{   
+			"Content": "850.00",
+            "Currency": "EUR"
+	},
+	"CreditAmount":{
+		    "Content": "0.00",
+            "Currency": "EUR"
+	},
+	"PrenoteDebitAmount": {
+		    "Content": "0.00",
+            "Currency": ""
+	},
+	"PrenoteCreditAmount":{
+			"Content": "0.00",
+            "Currency": ""
+        },
+	"BankAccountBalanceTypeCode":"L093",
+	"BankAccountBalanceTypeName": "Installment: Owed",
+	"BankAccountBillingItemID": "42113"
+},
+{
+	"OrdinalNumberValue": 6,
+	"BusinessSystemID":  "F6D_100",
+	"BkAcctIntID":"16A68B51D7301EE78DC88CDCD4B1A21C",
+	"BkAcctIntIDSchmAgcyID": "310",
+	"DueDate": "/Date(1556781636000)/",
+	"PaymentDate": "/Date(1556781636000)/",
+	"ValueDate":"/Date(1556781636000)/",
+	"DebitAmount":{   
+			"Content": "0.00",
+            "Currency": "EUR"
+	},
+	"CreditAmount":{
+		    "Content": "105.00",
+            "Currency": "EUR"
+	},
+	"PrenoteDebitAmount": {
+		    "Content": "0.00",
+            "Currency": ""
+	},
+	"PrenoteCreditAmount":{
+			"Content": "0.00",
+            "Currency": ""
+        },
+	"BankAccountBalanceTypeCode":"L136",
+	"BankAccountBalanceTypeName": "Payt: Charge Offs.Receiv",
+	"BankAccountBillingItemID": ""
+},
+{
+	"OrdinalNumberValue": 7,
+	"BusinessSystemID":  "F6D_100",
+	"BkAcctIntID":"16A68B51D7301EE78DC88CDCD4B1A21C",
+	"BkAcctIntIDSchmAgcyID": "310",
+	"DueDate": "/Date(1559460036000)/",
+	"PaymentDate": "/Date(1559460036000)/",
+	"ValueDate":"/Date(1559460036000)/",
+	"DebitAmount":{   
+			"Content": "0.00",
+            "Currency": "EUR"
+	},
+	"CreditAmount":{
+		    "Content": "850.00",
+            "Currency": "EUR"
+	},
+	"PrenoteDebitAmount": {
+		    "Content": "0.00",
+            "Currency": ""
+	},
+	"PrenoteCreditAmount":{
+			"Content": "0.00",
+            "Currency": ""
+        },
+	"BankAccountBalanceTypeCode":"L191",
+	"BankAccountBalanceTypeName": "Payment: Installment",
+	"BankAccountBillingItemID": ""
+	
+},
+{
+	"OrdinalNumberValue": 8,
+	"BusinessSystemID":  "F6D_100",
+	"BkAcctIntID":"16A68B51D7301EE78DC88CDCD4B1A21C",
+	"BkAcctIntIDSchmAgcyID": "310",
+	"DueDate": "/Date(1562052036000)/",
+	"PaymentDate": "/Date(1562052036000)/",
+	"ValueDate":"/Date(1562052036000)/",
+	"DebitAmount":{   
+			"Content": "105.00",
+            "Currency": "EUR"
+	},
+	"CreditAmount":{
+		    "Content": "0.00",
+            "Currency": "EUR"
+	},
+	"PrenoteDebitAmount": {
+		    "Content": "0.00",
+            "Currency": ""
+	},
+	"PrenoteCreditAmount":{
+			"Content": "0.00",
+            "Currency": ""
+        },
+	"BankAccountBalanceTypeCode":"L033",
+	"BankAccountBalanceTypeName": "Charge: Owed",
+	"BankAccountBillingItemID": "42116"
+},
+{
+	"OrdinalNumberValue": 9,
+	"BusinessSystemID":  "F6D_100",
+	"BkAcctIntID":"16A68B51D7301EE78DC88CDCD4B1A21C",
+	"BkAcctIntIDSchmAgcyID": "310",
+	"DueDate": "/Date(1572679236000)/",
+	"PaymentDate": "/Date(1572679236000)/",
+	"ValueDate":"/Date(1572679236000)/",
+	"DebitAmount":{   
+			"Content": "850.00",
+            "Currency": "EUR"
+	},
+	"CreditAmount":{
+		    "Content": "0.00",
+            "Currency": "EUR"
+	},
+	"PrenoteDebitAmount": {
+		    "Content": "0.00",
+            "Currency": ""
+	},
+	"PrenoteCreditAmount":{
+			"Content": "0.00",
+            "Currency": ""
+        },
+	"BankAccountBalanceTypeCode":"L093",
+	"BankAccountBalanceTypeName": "Installment: Owed",
+	"BankAccountBillingItemID": "42115"
+	
+}
+]

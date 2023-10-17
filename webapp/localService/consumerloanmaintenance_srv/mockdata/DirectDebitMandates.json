@@ -1,0 +1,32 @@
+[{
+	"DebtorBankAccount": {
+		"HolderName": "Hans Hansen",
+		"StandardID": "DE76500105175401625120",
+		"BkStandardID": "INGDDEFFXXX"
+	},
+	"ID": "LPM-BP",
+	"CreditorPartyID": "DE48ZZZ53003113525",
+	"BusinessSystemID": "F6D_100",
+	"SignatureDate": "\/Date(1437091200000)\/",
+	"ValidityEndDate": null,
+	"DirDebitCollsSEPASeqTypeCode": "RCUR",
+	"DirDebitCollsSEPASeqTypeName": "Recurring",
+	"CreditorReferenceID": "DE83900000010010019251",
+	"RelatedDebtorPartyID": "TD4"
+},
+{
+	"DebtorBankAccount": {
+		"HolderName": "Hans Hansen",
+		"StandardID": "DE76500105175401625120",
+		"BkStandardID": "INGDDEFFXXX"
+	},
+	"ID": "CAM-APP15",
+	"CreditorPartyID": "DE48ZZZ53003113525",
+	"BusinessSystemID": "F6D_100",
+	"SignatureDate": "\/Date(1437091200000)\/",
+	"ValidityEndDate": null,
+	"DirDebitCollsSEPASeqTypeCode": "RCUR",
+	"DirDebitCollsSEPASeqTypeName": "Recurring",
+	"CreditorReferenceID": "DE83900000010010019251",
+	"RelatedDebtorPartyID": "TD4"
+}]

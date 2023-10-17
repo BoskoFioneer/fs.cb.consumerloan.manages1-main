@@ -1,0 +1,35 @@
+<!-- This nested view is used for Object Header content of the object page and for both display and edit mode -->
+<mvc:View controllerName="fs.cb.consumerloan.manages1.controller.ObjectHeaderContent" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout"
+	xmlns:m="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.uxap">
+	<!--<layout:VerticalLayout id="iconLayout" class="sapUiForceWidthAuto sapUiLargeMarginEnd sapUiTinyMarginBegin sapUiTinyMarginBottom">-->
+	<!--	<core:Icon id="consumerloanIcon" src="sap-icon://BusinessSuiteInAppSymbols/icon-bank-account" height="100%" size="4rem"-->
+	<!--		alt="{i18n>xtol.consumer_loans_icon}" useIconTooltip="false"/>-->
+	<!--</layout:VerticalLayout>-->
+	<layout:VerticalLayout id="accountHolderNameLayout" class="sapUiForceWidthAuto sapUiLargeMarginEnd sapUiTinyMarginBottom">
+		<m:Label id="accountHolderNameLabel" text="{i18n>xfld.accountHolder}"/>
+		<m:Link ariaLabelledBy="accountHolderNameLabel" id="accountHolderLink" press="onAccountHolderLinkPressed"
+			text="{BusinessPartnerFormattedName}"/>
+	</layout:VerticalLayout>
+	<layout:VerticalLayout class="sapUiForceWidthAuto sapUiLargeMarginEnd sapUiTinyMarginBottom" id="contractManagerLayout">
+		<m:Label id="contractManagerLabel" text="{i18n>xfld.contractManager}"/>
+		<m:Link ariaLabelledBy="contractManagerLabel" id="contractManagerLink" press="onContractManagerLinkPressed" text="{Description}"/>
+	</layout:VerticalLayout>
+		<layout:VerticalLayout class="sapUiForceWidthAuto sapUiLargeMarginEnd sapUiTinyMarginBottom" id="createdOnLayout">
+		<m:Label id="createdOnLabel" text="{i18n>xfld.contractStartDateHeader}"/>
+		<m:Text id="createdOnText" text="{path :'CreationDate' , type: 'sap.ui.model.type.Date'}"/>
+	</layout:VerticalLayout>
+	<layout:VerticalLayout class="sapUiForceWidthAuto sapUiLargeMarginEnd sapUiTinyMarginBottom" id="productLayout">
+		<m:Label id="productLabel" labelFor="product" text="{i18n>xfld.accountProduct}"/>
+		<m:Text id="productNameText" text="{PrdctnCntrlDscrptn}"/>
+	</layout:VerticalLayout>
+	<layout:VerticalLayout class="sapUiForceWidthAuto sapUiLargeMarginEnd sapUiTinyMarginBottom" id="effectiveInterestRateLayout">
+		<m:Label id="effectiveInterestRateLabel" labelFor="effectiveInterestRateObjectNumber" text="{i18n>xfld.effectiveInterestRate}"/>
+		<m:ObjectNumber emphasized="true" id="effectiveInterestRateObjectNumber" number="{path: 'EffectiveInterestRateText', type:'fs.cb.consumerloan.manages1.model.PercentageType', formatOptions: { decimals: 2, showMeasure: false}}"></m:ObjectNumber>
+	</layout:VerticalLayout>
+	<layout:VerticalLayout class="sapUiForceWidthAuto sapUiLargeMarginEnd sapUiTinyMarginBottom" id="currentBalanceLayout">
+		<m:Label id="effectiveCapitalLabel" labelFor="effectiveCapitalObjectNumber" text="{i18n>xfld.effectiveCapital}"/>
+		<m:ObjectNumber emphasized="true" id="effectiveCapitalObjectNumber"
+			number="{parts: [{path: 'EffectiveCapitalAmount/Content'}, {path: 'EffectiveCapitalAmount/CurrencyCode'}], type: 'sap.ui.model.type.Currency', formatOptions: {showMeasure: false} }"
+			state="{= ${EffectiveCapitalAmount/Content} >= 0 ? 'None' : 'Error' }" unit="{EffectiveCapitalAmount/CurrencyCode}"/>
+	</layout:VerticalLayout>
+</mvc:View>

@@ -1,0 +1,13 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<!-- Extends the AccountHolderCard fragment -->
+	<core:ExtensionPoint name="ExtAccountHolderCard">
+	<QuickView id="accountHolderQuickView" afterClose="afterClose" afterOpen="afterOpen" busy="{= ${cardModel>/open} &amp;&amp; ${cardModel>/loading}}" placement="Auto">
+		<QuickViewPage description="{InternalID}" groups="{ path : 'contact>/groups', templateShareable : 'true'}" header="{i18n>xfld.accountHolder}"
+			icon="sap-icon://customer" id="accountHolderPage" title="{BusinessPartnerFormattedName}">
+			<QuickViewGroup id="accountHolderPageGroup" elements="{ path : 'contact>elements', templateShareable : 'true'}" heading="{contact>heading}">
+				<QuickViewGroupElement id="accountHolderPageElement" label="{contact>label}" type="{= ${contact>value} === '' ? ${cardModel>/elementType} : ${contact>elementType}}" value="{path : 'contact>value', formatter: '.formatter.formatNoText'}"/>
+			</QuickViewGroup>
+		</QuickViewPage>
+	</QuickView>
+	</core:ExtensionPoint>
+</core:FragmentDefinition>

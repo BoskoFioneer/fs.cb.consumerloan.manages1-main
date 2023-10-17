@@ -1,0 +1,73 @@
+<mvc:View xmlns:l="sap.core.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+	controllerName="fs.cb.consumerloan.manages1.controller.PaymentPlan" width="auto">
+	<Table busyIndicatorDelay="{tableView>/tableBusyDelay}" enableBusyIndicator="true" id="tablePaymentPlan" inset="false"
+		updateFinished="onUpdateFinished" width="auto" noDataText=" {tableView>/tableNoDataText}">
+		<headerToolbar id="tablePaymentPlanHeaderToolbar">
+			<Toolbar id="tablePaymentPlanToolbar" visible="true">
+				<Title id="tablePaymentPlanTitle" text="{tableView>/tableTitle}" visible="false"/>
+				<Select id="paymentPlanDurationSelect" selectedKey="thisYear" ariaLabelledBy="paymentPlanDurationText" change="onSelectPaymentPlanDuration">
+					<items>
+						<core:Item id="paymentPlanDurationUserSpecPeriod" key="dateRange" text="{i18n>xlst.dateRange}"/>
+						<core:Item id="paymentPlanDurationThisMonth" key="thisMonth" text="{i18n>xlst.thisMonth}"/>
+						<core:Item id="paymentPlanDurationThisQuarter" key="thisQuarter" text="{i18n>xlst.thisQuarter}"/>
+						<core:Item id="paymentPlanDurationLastYear" key="thisYear" text="{i18n>xlst.thisYear}"/>
+						<core:Item id="paymentPlanDurationAll" key="all" text="{i18n>xlst.all}"/>
+					</items>
+				</Select>
+				<DateRangeSelection id="paymentPlanDateRangeSelection" change="onChangePaymentPlanDateRange"
+					dateValue="{customDateRangeModel>/PaymentPlanDateFrom}" secondDateValue="{customDateRangeModel>/PaymentPlanDateTo}" width="20em">
+					<layoutData><OverflowToolbarLayoutData id="paymentPlanDateRangeOtb" minWidth="20%" maxWidth="40%" shrinkable="true" group="1"/></layoutData>
+				</DateRangeSelection>
+				<Panel id="paymentPlanSettingsPanel">
+					<FlexBox id="paymentPlanSettingsFb" alignItems="Start" justifyContent="End">
+						<items><Button id="paymentPlanSettingsBtn" icon="sap-icon://action-settings" press="onPaymentPlanSettingsPressed" tooltip="{i18n>xtol.settings}"/></items>
+					</FlexBox>
+				</Panel>
+				<ToolbarSpacer id="tablePaymentPlanToolbarSpacer"/>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column id="tablePaymentPlanPaymentDateColumn" hAlign="End" width="10rem">
+				<Label id="tablePaymentPlanPaymentDateLabel" text="{i18n>xfld.paymentDate}"/>
+			</Column>
+			<Column demandPopin="true" id="tablePaymentPlanInstallmentColumn" hAlign="End" minScreenWidth="XXLarge">
+				<Label id="tablePaymentPlanInstallmentLabel" text="{i18n>xfld.installment}"/>
+			</Column>
+			<Column demandPopin="true" id="tablePaymentPlanRepaymentColumn" minScreenWidth="XXLarge" hAlign="End">
+				<Label id="tablePaymentPlanRepaymentLabel" text="{i18n>xfld.repayment}"/>
+			</Column>
+			<Column demandPopin="true" id="tablePaymentPlanInterestColumn" minScreenWidth="XXLarge" hAlign="End">
+				<Label id="tablePaymentPlanInterestLabel" text="{i18n>xfld.interest}"/>
+			</Column>
+			<Column demandPopin="true" id="tablePaymentPlanChargesColumn" minScreenWidth="XXLarge" hAlign="End">
+				<Label id="tablePaymentPlanChargesLabel" text="{i18n>xfld.charges}"/>
+			</Column>
+			<Column id="tablePaymentPlanPaymentColumn" hAlign="End">
+				<Label id="tablePaymentPlanPaymentLabel" text="{i18n>xfld.payment}"/>
+			</Column>
+			<Column hAlign="End" id="tablePaymentPlanLoanBalColumn">
+				<Label id="tablePaymentPlanLoanBalLabel" text="{i18n>xfld.loanBal}"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem detailPress="PaymentPlanTblColumnListItem" id="tablePaymentPlanColItem">
+				<cells>
+					<ObjectIdentifier id="tablePaymentPlanObjIdentifier" ariaLabelledBy="tablePaymentPlanDateLabel"
+						title="{path: 'Date', type: 'sap.ui.model.type.Date'}"/>
+					<Text id="tablePaymentPlanRglrInstallmentToBePaidAmount"
+						text="{parts: [{path:'RglrInstallmentToBePaidAmount/Content'}, {path:'RglrInstallmentToBePaidAmount/Currency'}], formatter: '.formatter.formatAmountText'}"/>
+					<Text id="tablePaymentPlanAmortizationToBePaidAmount"
+						text="{parts: [{path:'AmortizationToBePaidAmount/Content'}, {path:'AmortizationToBePaidAmount/Currency'}] ,formatter: '.formatter.formatAmountText'}"/>
+					<Text id="tablePaymentPlanInterestToBePaidAmount"
+						text="{parts: [{path:'InterestToBePaidAmount/Content'}, {path:'InterestToBePaidAmount/Currency'}], formatter: '.formatter.formatAmountText'}"/>
+					<Text id="tablePaymentPlanChargeToBePaidAmount"
+						text="{parts: [{path:'ChargeToBePaidAmount/Content'}, {path:'ChargeToBePaidAmount/Currency'}], formatter: '.formatter.formatAmountText'}"/>
+					<Text id="tablePaymentPlanAmount"
+						text="{parts: [{path:'Amount/Content'}, {path:'Amount/Currency'}], formatter: '.formatter.formatAmountText'}"/>
+					<Text id="tablePaymentPlanLoanContrRemainingDebtAmount"
+						text="{parts: [{path:'LoanContrRemainingDebtAmount/Content'}, {path:'LoanContrRemainingDebtAmount/Currency'}],formatter: '.formatter.formatAmountText'}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</mvc:View>

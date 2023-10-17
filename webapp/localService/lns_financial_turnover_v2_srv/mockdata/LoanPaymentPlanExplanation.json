@@ -1,0 +1,752 @@
+[{
+		"Amount": {
+			"Content": "955.00",
+			"Currency": "EUR"
+		},
+		"RglrInstallmentToBePaidAmount": {
+			"Content": "850.00",
+			"Currency": "EUR"
+		},
+		"AmortizationToBePaidAmount": {
+			"Content": "811.71",
+			"Currency": "EUR"
+		},
+		"InterestToBePaidAmount": {
+
+			"Content": "38.29",
+			"Currency": "EUR"
+		},
+		"ChargeToBePaidAmount": {
+
+			"Content": "105.00",
+			"Currency": "EUR"
+		},
+		"InsurancePremiumToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DiscountToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"IntrstOnArrearsToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DeferralAmtznToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InterestCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"ChargeCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InsurPremiumCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"LoanContrRemainingDebtAmount": {
+
+			"Content": "8377.18",
+			"Currency": "EUR"
+		},
+		"Date": "/Date(983298600000)/",
+		"BusinessSystemID": "F6D_100",
+		"LContrIDSchemeID": "BAC.001",
+		"LContrIDSchemeAgencyID": "310",
+		"LoanContractID": "DE53904210810010030023"
+	}, {
+		"Amount": {
+			"Content": "955.00",
+			"Currency": "EUR"
+		},
+		"RglrInstallmentToBePaidAmount": {
+			"Content": "850.00",
+			"Currency": "EUR"
+		},
+		"AmortizationToBePaidAmount": {
+			"Content": "812.77",
+			"Currency": "EUR"
+		},
+		"InterestToBePaidAmount": {
+
+			"Content": "37.23",
+			"Currency": "EUR"
+		},
+		"ChargeToBePaidAmount": {
+
+			"Content": "105.00",
+			"Currency": "EUR"
+		},
+		"InsurancePremiumToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DiscountToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"IntrstOnArrearsToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DeferralAmtznToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InterestCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"ChargeCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InsurPremiumCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"LoanContrRemainingDebtAmount": {
+
+			"Content": "7564.41",
+			"Currency": "EUR"
+		},
+		"Date": "/Date(986149800000)/",
+		"BusinessSystemID": "F6D_100",
+		"LContrIDSchemeID": "BAC.001",
+		"LContrIDSchemeAgencyID": "310",
+		"LoanContractID": "DE53904210810010030023"
+	}, {
+		"Amount": {
+			"Content": "955.00",
+			"Currency": "EUR"
+		},
+		"RglrInstallmentToBePaidAmount": {
+			"Content": "850.00",
+			"Currency": "EUR"
+		},
+		"AmortizationToBePaidAmount": {
+			"Content": "820.58",
+			"Currency": "EUR"
+		},
+		"InterestToBePaidAmount": {
+
+			"Content": "29.42",
+			"Currency": "EUR"
+		},
+		"ChargeToBePaidAmount": {
+
+			"Content": "105.00",
+			"Currency": "EUR"
+		},
+		"InsurancePremiumToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DiscountToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"IntrstOnArrearsToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DeferralAmtznToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InterestCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"ChargeCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InsurPremiumCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"LoanContrRemainingDebtAmount": {
+
+			"Content": "6743.83",
+			"Currency": "EUR"
+		},
+		"Date": "/Date(988569000000)/",
+		"BusinessSystemID": "F6D_100",
+		"LContrIDSchemeID": "BAC.001",
+		"LContrIDSchemeAgencyID": "310",
+		"LoanContractID": "DE53904210810010030023"
+	}, {
+		"Amount": {
+			"Content": "955.00",
+			"Currency": "EUR"
+		},
+		"RglrInstallmentToBePaidAmount": {
+			"Content": "850.00",
+			"Currency": "EUR"
+		},
+		"AmortizationToBePaidAmount": {
+			"Content": "821.90",
+			"Currency": "EUR"
+		},
+		"InterestToBePaidAmount": {
+
+			"Content": "28.10",
+			"Currency": "EUR"
+		},
+		"ChargeToBePaidAmount": {
+
+			"Content": "105.00",
+			"Currency": "EUR"
+		},
+		"InsurancePremiumToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DiscountToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"IntrstOnArrearsToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DeferralAmtznToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InterestCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"ChargeCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InsurPremiumCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"LoanContrRemainingDebtAmount": {
+
+			"Content": "5921.93",
+			"Currency": "EUR"
+		},
+		"Date": "/Date(991247400000)/",
+		"BusinessSystemID": "F6D_100",
+		"LContrIDSchemeID": "BAC.001",
+		"LContrIDSchemeAgencyID": "310",
+		"LoanContractID": "DE53904210810010030023"
+	}, {
+		"Amount": {
+			"Content": "955.00",
+			"Currency": "EUR"
+		},
+		"RglrInstallmentToBePaidAmount": {
+			"Content": "850.00",
+			"Currency": "EUR"
+		},
+		"AmortizationToBePaidAmount": {
+			"Content": "823.68",
+			"Currency": "EUR"
+		},
+		"InterestToBePaidAmount": {
+
+			"Content": "26.32",
+			"Currency": "EUR"
+		},
+		"ChargeToBePaidAmount": {
+
+			"Content": "105.00",
+			"Currency": "EUR"
+		},
+		"InsurancePremiumToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DiscountToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"IntrstOnArrearsToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DeferralAmtznToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InterestCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"ChargeCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InsurPremiumCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"LoanContrRemainingDebtAmount": {
+
+			"Content": "5098.25",
+			"Currency": "EUR"
+		},
+		"Date": "/Date(994012200000)/",
+		"BusinessSystemID": "F6D_100",
+		"LContrIDSchemeID": "BAC.001",
+		"LContrIDSchemeAgencyID": "310",
+		"LoanContractID": "DE53904210810010030023"
+	}, {
+		"Amount": {
+			"Content": "955.00",
+			"Currency": "EUR"
+		},
+		"RglrInstallmentToBePaidAmount": {
+			"Content": "850.00",
+			"Currency": "EUR"
+		},
+		"AmortizationToBePaidAmount": {
+			"Content": "830.17",
+			"Currency": "EUR"
+		},
+		"InterestToBePaidAmount": {
+
+			"Content": "19.83",
+			"Currency": "EUR"
+		},
+		"ChargeToBePaidAmount": {
+
+			"Content": "105.00",
+			"Currency": "EUR"
+		},
+		"InsurancePremiumToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DiscountToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"IntrstOnArrearsToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DeferralAmtznToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InterestCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"ChargeCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InsurPremiumCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"LoanContrRemainingDebtAmount": {
+
+			"Content": "4268.08",
+			"Currency": "EUR"
+		},
+		"Date": "/Date(996517800000)/",
+		"BusinessSystemID": "F6D_100",
+		"LContrIDSchemeID": "BAC.001",
+		"LContrIDSchemeAgencyID": "310",
+		"LoanContractID": "DE53904210810010030023"
+	}, {
+		"Amount": {
+			"Content": "955.00",
+			"Currency": "EUR"
+		},
+		"RglrInstallmentToBePaidAmount": {
+			"Content": "850.00",
+			"Currency": "EUR"
+		},
+		"AmortizationToBePaidAmount": {
+			"Content": "832.22",
+			"Currency": "EUR"
+		},
+		"InterestToBePaidAmount": {
+
+			"Content": "17.78",
+			"Currency": "EUR"
+		},
+		"ChargeToBePaidAmount": {
+
+			"Content": "105.00",
+			"Currency": "EUR"
+		},
+		"InsurancePremiumToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DiscountToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"IntrstOnArrearsToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DeferralAmtznToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InterestCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"ChargeCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InsurPremiumCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"LoanContrRemainingDebtAmount": {
+
+			"Content": "3435.86",
+			"Currency": "EUR"
+		},
+		"Date": "/Date(999196200000)/",
+		"BusinessSystemID": "F6D_100",
+		"LContrIDSchemeID": "BAC.001",
+		"LContrIDSchemeAgencyID": "310",
+		"LoanContractID": "DE53904210810010030023"
+	},
+
+	{
+		"Amount": {
+			"Content": "955.00",
+			"Currency": "EUR"
+		},
+		"RglrInstallmentToBePaidAmount": {
+			"Content": "850.00",
+			"Currency": "EUR"
+		},
+		"AmortizationToBePaidAmount": {
+			"Content": "835.21",
+			"Currency": "EUR"
+		},
+		"InterestToBePaidAmount": {
+
+			"Content": "14.79",
+			"Currency": "EUR"
+		},
+		"ChargeToBePaidAmount": {
+
+			"Content": "105.00",
+			"Currency": "EUR"
+		},
+		"InsurancePremiumToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DiscountToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"IntrstOnArrearsToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DeferralAmtznToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InterestCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"ChargeCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InsurPremiumCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"LoanContrRemainingDebtAmount": {
+
+			"Content": "2600.65",
+			"Currency": "EUR"
+		},
+		"Date": "/Date(1001874600000)/",
+		"BusinessSystemID": "F6D_100",
+		"LContrIDSchemeID": "BAC.001",
+		"LContrIDSchemeAgencyID": "310",
+		"LoanContractID": "DE53904210810010030023"
+	}, {
+		"Amount": {
+			"Content": "955.00",
+			"Currency": "EUR"
+		},
+		"RglrInstallmentToBePaidAmount": {
+			"Content": "850.00",
+			"Currency": "EUR"
+		},
+		"AmortizationToBePaidAmount": {
+			"Content": "839.53",
+			"Currency": "EUR"
+		},
+		"InterestToBePaidAmount": {
+
+			"Content": "10.47",
+			"Currency": "EUR"
+		},
+		"ChargeToBePaidAmount": {
+
+			"Content": "105.00",
+			"Currency": "EUR"
+		},
+		"InsurancePremiumToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DiscountToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"IntrstOnArrearsToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DeferralAmtznToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InterestCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"ChargeCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InsurPremiumCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"LoanContrRemainingDebtAmount": {
+
+			"Content": "1761.12",
+			"Currency": "EUR"
+		},
+		"Date": "/Date(1001874600000)/",
+		"BusinessSystemID": "F6D_100",
+		"LContrIDSchemeID": "BAC.001",
+		"LContrIDSchemeAgencyID": "310",
+		"LoanContractID": "DE53904210810010030023"
+	}, {
+		"Amount": {
+			"Content": "955.00",
+			"Currency": "EUR"
+		},
+		"RglrInstallmentToBePaidAmount": {
+			"Content": "850.00",
+			"Currency": "EUR"
+		},
+		"AmortizationToBePaidAmount": {
+			"Content": "842.66",
+			"Currency": "EUR"
+		},
+		"InterestToBePaidAmount": {
+
+			"Content": "7.34",
+			"Currency": "EUR"
+		},
+		"ChargeToBePaidAmount": {
+
+			"Content": "105.00",
+			"Currency": "EUR"
+		},
+		"InsurancePremiumToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DiscountToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"IntrstOnArrearsToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DeferralAmtznToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InterestCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"ChargeCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InsurPremiumCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"LoanContrRemainingDebtAmount": {
+
+			"Content": "918.46",
+			"Currency": "EUR"
+		},
+		"Date": "/Date(1007058600000)/",
+		"BusinessSystemID": "F6D_100",
+		"LContrIDSchemeID": "BAC.001",
+		"LContrIDSchemeAgencyID": "310",
+		"LoanContractID": "DE53904210810010030023"
+	}, {
+		"Amount": {
+			"Content": "1027.54",
+			"Currency": "EUR"
+		},
+		"RglrInstallmentToBePaidAmount": {
+			"Content": "922.54",
+			"Currency": "EUR"
+		},
+		"AmortizationToBePaidAmount": {
+			"Content": "918.46",
+			"Currency": "EUR"
+		},
+		"InterestToBePaidAmount": {
+
+			"Content": "4.08",
+			"Currency": "EUR"
+		},
+		"ChargeToBePaidAmount": {
+
+			"Content": "105.00",
+			"Currency": "EUR"
+		},
+		"InsurancePremiumToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DiscountToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"IntrstOnArrearsToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"DeferralAmtznToBePaidAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InterestCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"ChargeCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"InsurPremiumCapitalizedAmount": {
+
+			"Content": "0.00",
+			"Currency": ""
+		},
+		"LoanContrRemainingDebtAmount": {
+
+			"Content": "0.00",
+			"Currency": "EUR"
+		},
+		"Date": "/Date(1009909800000)/",
+		"BusinessSystemID": "F6D_100",
+		"LContrIDSchemeID": "BAC.001",
+		"LContrIDSchemeAgencyID": "310",
+		"LoanContractID": "DE53904210810010030023"
+	}
+]

@@ -1,0 +1,36 @@
+[{
+	"InternalID": "ADVISOR1",
+	"BusinessSystemID": "F6D_100",
+	"UUID": "",
+	"BPRelshpRoleCode": "BUR011-2",
+	"BPRelshpRoleName": "Advisor",
+	"AcctHldrPartyInternalID": "TD4",
+	"BusinessPartnerFormattedName": "Eckehart Fleck",
+	"FormattedDefaultAddressDesc": "Eckehart Fleck / Filialstraße 10 / 44444 Filialort",
+	"TelephoneDefaultFrmtdNoDesc": "+49 (160) 11223344",
+	"EMailDefaultURI": "eck.fleck@bank.com"
+},
+{
+	"InternalID": "ADVISOR2",
+	"BusinessSystemID": "F6D_100",
+	"UUID": "",
+	"BPRelshpRoleCode": "BUR011-2",
+	"BPRelshpRoleName": "Advisor 2",
+	"AcctHldrPartyInternalID": "TD4",
+	"BusinessPartnerFormattedName": "Maria Müller",
+	"FormattedDefaultAddressDesc": "Maria Müller / Filialstraße 10 / 44444 Filialort",
+	"TelephoneDefaultFrmtdNoDesc": "+49 (999) 11223344",
+	"EMailDefaultURI": "maria.mueller@bank.com"
+},
+{
+	"InternalID": "GUARD1",
+	"BusinessSystemID": "F6D_100",
+	"UUID": "",
+	"BPRelshpRoleCode": "BUR022-1",
+	"BPRelshpRoleName": "Legal Representative",
+	"AcctHldrPartyInternalID": "TD4",
+	"BusinessPartnerFormattedName": "Harald Harms",
+	"FormattedDefaultAddressDesc": "Harald Harms / Hausstraße 10 / 44444 Hausort",
+	"TelephoneDefaultFrmtdNoDesc": "+49 (170) 55667788",
+	"EMailDefaultURI": "harald.harms@bank.com"
+}]

@@ -1,0 +1,42 @@
+specVersion: "3.1"
+metadata:
+  name: fs.cb.consumerloan.manages1
+type: application
+server:
+  customMiddleware:
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        ignoreCertError: false
+        backend:
+          - path: /sap
+            url: https://vh-fdc02-fc1.fsic.sap.corp:44310
+            client: "100"
+            destination: F8OCLNT100
+          - path: /sap/opu/odata/sap/consumerloanmaintenance_srv/
+            destination: F8OCLNT100
+            url: https://vh-fdc02-fc1.fsic.sap.corp:44310
+            client: "100"
+          - path: /sap/opu/odata/sap/BANKACCOUNTCONTRACTSEARCH_SRV
+            destination: F8BCLNT100
+            url: https://vh-fdc02-fc1.fsic.sap.corp:44310
+            client: "100"
+          - path: /sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='BANKACCOUNTCONTRACTSEAR_ANNO_MDL',Version='0001')/$value
+            url: https://vh-fdc02-fc1.fsic.sap.corp:44310
+            client: "100"
+        ui5:
+          path:
+            - /resources
+            - /test-resources
+          url: https://ui5.sap.com
+    - name: fiori-tools-appreload
+      afterMiddleware: compression
+      configuration:
+        port: 35729
+        path: webapp
+        delay: 300
+    - name: fiori-tools-preview
+      afterMiddleware: fiori-tools-appreload
+      configuration:
+        component: fs.cb.consumerloan.manages1
+        ui5Theme: sap_fiori_3

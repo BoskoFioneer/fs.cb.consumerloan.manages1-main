@@ -1,0 +1,226 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema Namespace="LNS_FINANCIAL_TURNOVER_V2_SRV" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="LoanContract" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="ID"/>
+					<PropertyRef Name="IDSchemeID"/>
+					<PropertyRef Name="IDSchemeAgencyID"/>
+					<PropertyRef Name="BusinessSystemID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false"
+					sap:label="Content Field for BankAccountContractID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="IDSchemeID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Field for BankAccountSchemeID"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="IDSchemeAgencyID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false"
+					sap:label="Field for bankAccountSchemeAgencyID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BusinessSystemID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false"
+					sap:label="Data Element for BusinessSystemID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<NavigationProperty Name="LoanPaymentPlanExplanation" Relationship="LNS_FINANCIAL_TURNOVER_V2_SRV.LoanContract_LoanPaymentPlanExplan"
+					FromRole="FromRole_LoanContract_LoanPaymentPlanExplan" ToRole="ToRole_LoanContract_LoanPaymentPlanExplan"/>
+				<NavigationProperty Name="LoanPaymentPlanPayment" Relationship="LNS_FINANCIAL_TURNOVER_V2_SRV.LoanContract_LoanPaymentPlanPayment"
+					FromRole="FromRole_LoanContract_LoanPaymentPlanPayment" ToRole="ToRole_LoanContract_LoanPaymentPlanPayment"/>
+			</EntityType>
+			<EntityType Name="LoanPaymentPlanPayment" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="Date"/>
+					<PropertyRef Name="BusinessSystemID"/>
+					<PropertyRef Name="LoanContractID"/>
+					<PropertyRef Name="LContrIDSchemeID"/>
+					<PropertyRef Name="LContrIDSchemeAgencyID"/>
+				</Key>
+				<Property Name="Amount" Type="LNS_FINANCIAL_TURNOVER_V2_SRV.Amount" Nullable="false"/>
+				<Property Name="RglrInstallmentToBePaidAmount" Type="LNS_FINANCIAL_TURNOVER_V2_SRV.Amount" Nullable="false"/>
+				<Property Name="AmortizationToBePaidAmount" Type="LNS_FINANCIAL_TURNOVER_V2_SRV.Amount" Nullable="false"/>
+				<Property Name="InterestToBePaidAmount" Type="LNS_FINANCIAL_TURNOVER_V2_SRV.Amount" Nullable="false"/>
+				<Property Name="ChargeToBePaidAmount" Type="LNS_FINANCIAL_TURNOVER_V2_SRV.Amount" Nullable="false"/>
+				<Property Name="InsurancePremiumToBePaidAmount" Type="LNS_FINANCIAL_TURNOVER_V2_SRV.Amount" Nullable="false"/>
+				<Property Name="DiscountToBePaidAmount" Type="LNS_FINANCIAL_TURNOVER_V2_SRV.Amount" Nullable="false"/>
+				<Property Name="IntrstOnArrearsToBePaidAmount" Type="LNS_FINANCIAL_TURNOVER_V2_SRV.Amount" Nullable="false"/>
+				<Property Name="DeferralAmtznToBePaidAmount" Type="LNS_FINANCIAL_TURNOVER_V2_SRV.Amount" Nullable="false"/>
+				<Property Name="InterestCapitalizedAmount" Type="LNS_FINANCIAL_TURNOVER_V2_SRV.Amount" Nullable="false"/>
+				<Property Name="ChargeCapitalizedAmount" Type="LNS_FINANCIAL_TURNOVER_V2_SRV.Amount" Nullable="false"/>
+				<Property Name="InsurPremiumCapitalizedAmount" Type="LNS_FINANCIAL_TURNOVER_V2_SRV.Amount" Nullable="false"/>
+				<Property Name="LoanContrRemainingDebtAmount" Type="LNS_FINANCIAL_TURNOVER_V2_SRV.Amount" Nullable="false"/>
+				<Property Name="Date" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="Time Stamp" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/>
+				<Property Name="BusinessSystemID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="LoanContractID" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="LContrIDSchemeID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="LContrIDSchemeAgencyID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+			</EntityType>
+			<EntityType Name="LoanPaymentPlanExplanation" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="OrdinalNumberValue"/>
+					<PropertyRef Name="BusinessSystemID"/>
+					<PropertyRef Name="LoanContractID"/>
+					<PropertyRef Name="LContrIDSchemeID"/>
+					<PropertyRef Name="LContrIDSchemeAgencyID"/>
+				</Key>
+				<Property Name="OrdinalNumberValue" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:label="Data Element for OrdinalNumberValue"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BusinessSystemID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false"
+					sap:label="Data Element for BusinessSystemID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="LoanContractID" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false"
+					sap:label="Content Field for BankAccountContractID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="LContrIDSchemeID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false"
+					sap:label="Field for BankAcountSchemeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="LContrIDSchemeAgencyID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false"
+					sap:label="Field for BankAccountSchemeAgencyID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="ContentTypeCode" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false"
+					sap:label="Content Field for LoanPaymentPlanExplanationContentTypeCode" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="ContentTypeName" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false"
+					sap:label="Content Field for LONG_Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="Note" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Content Field for Note" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+			</EntityType>
+			<EntityType Name="BankAccount" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="BkAcctIntID"/>
+					<PropertyRef Name="BkAcctIntIDSchmAgcyID"/>
+					<PropertyRef Name="BusinessSystemID"/>
+				</Key>
+				<Property Name="BkAcctIntID" Type="Edm.String" Nullable="false" MaxLength="32" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkAcctIntIDSchmAgcyID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BusinessSystemID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<NavigationProperty Name="PostedLoanFinancialTurnover" Relationship="LNS_FINANCIAL_TURNOVER_V2_SRV.BankAccount_PostedLoanFinancialTurnover"
+					FromRole="FromRole_BankAccount_PostedLoanFinancialTurnover" ToRole="ToRole_BankAccount_PostedLoanFinancialTurnover"/>
+			</EntityType>
+			<EntityType Name="PostedLoanFinancialTurnover" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="OrdinalNumberValue"/>
+					<PropertyRef Name="BusinessSystemID"/>
+					<PropertyRef Name="BkAcctIntID"/>
+					<PropertyRef Name="BkAcctIntIDSchmAgcyID"/>
+				</Key>
+				<Property Name="DebitAmount" Type="LNS_FINANCIAL_TURNOVER_V2_SRV.Amount" Nullable="false"/>
+				<Property Name="CreditAmount" Type="LNS_FINANCIAL_TURNOVER_V2_SRV.Amount" Nullable="false"/>
+				<Property Name="PrenoteDebitAmount" Type="LNS_FINANCIAL_TURNOVER_V2_SRV.Amount" Nullable="false"/>
+				<Property Name="PrenoteCreditAmount" Type="LNS_FINANCIAL_TURNOVER_V2_SRV.Amount" Nullable="false"/>
+				<Property Name="OrdinalNumberValue" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:label="Data Element for OrdinalNumberValue"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BusinessSystemID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false"
+					sap:label="Data Element for BusinessSystemID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkAcctIntID" Type="Edm.String" Nullable="false" MaxLength="32" sap:unicode="false"
+					sap:label="Content Field for BankAccountInternalID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkAcctIntIDSchmAgcyID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false"
+					sap:label="Field for BankAccountSchemeAgencyID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="DueDate" Type="Edm.DateTime" Precision="0" sap:unicode="false" sap:label="Data Element for Date" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="PaymentDate" Type="Edm.DateTime" Precision="0" sap:unicode="false" sap:label="Data Element for Date" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="ValueDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:unicode="false" sap:label="Data Element for Date"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+				<Property Name="BankAccountBalanceTypeCode" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false"
+					sap:label="Content Field for BankAccountBalanceTypeCode" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="BankAccountBalanceTypeName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false"
+					sap:label="Content Field for MEDIUM_Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BankAccountBillingItemID" Type="Edm.String" MaxLength="20" sap:unicode="false"
+					sap:label="Data Element for BankAccountBillingItemID" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+			</EntityType>
+			<ComplexType Name="Amount">
+				<Property Name="Content" Type="Edm.Decimal" Precision="23" Scale="2" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="Currency" Type="Edm.String" MaxLength="5" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+			</ComplexType>
+			<Association Name="BankAccount_PostedLoanFinancialTurnover" sap:content-version="1">
+				<End Type="LNS_FINANCIAL_TURNOVER_V2_SRV.BankAccount" Multiplicity="1" Role="FromRole_BankAccount_PostedLoanFinancialTurnover"/>
+				<End Type="LNS_FINANCIAL_TURNOVER_V2_SRV.PostedLoanFinancialTurnover" Multiplicity="*" Role="ToRole_BankAccount_PostedLoanFinancialTurnover"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_BankAccount_PostedLoanFinancialTurnover">
+						<PropertyRef Name="BkAcctIntID"/>
+						<PropertyRef Name="BkAcctIntIDSchmAgcyID"/>
+						<PropertyRef Name="BusinessSystemID"/>
+					</Principal>
+					<Dependent Role="ToRole_BankAccount_PostedLoanFinancialTurnover">
+						<PropertyRef Name="BkAcctIntID"/>
+						<PropertyRef Name="BkAcctIntIDSchmAgcyID"/>
+						<PropertyRef Name="BusinessSystemID"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="LoanContract_LoanPaymentPlanExplan" sap:content-version="1">
+				<End Type="LNS_FINANCIAL_TURNOVER_V2_SRV.LoanContract" Multiplicity="1" Role="FromRole_LoanContract_LoanPaymentPlanExplan"/>
+				<End Type="LNS_FINANCIAL_TURNOVER_V2_SRV.LoanPaymentPlanExplanation" Multiplicity="*" Role="ToRole_LoanContract_LoanPaymentPlanExplan"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_LoanContract_LoanPaymentPlanExplan">
+						<PropertyRef Name="BusinessSystemID"/>
+						<PropertyRef Name="IDSchemeAgencyID"/>
+						<PropertyRef Name="IDSchemeID"/>
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="ToRole_LoanContract_LoanPaymentPlanExplan">
+						<PropertyRef Name="BusinessSystemID"/>
+						<PropertyRef Name="LContrIDSchemeAgencyID"/>
+						<PropertyRef Name="LContrIDSchemeID"/>
+						<PropertyRef Name="LoanContractID"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="LoanContract_LoanPaymentPlanPayment" sap:content-version="1">
+				<End Type="LNS_FINANCIAL_TURNOVER_V2_SRV.LoanContract" Multiplicity="1" Role="FromRole_LoanContract_LoanPaymentPlanPayment"/>
+				<End Type="LNS_FINANCIAL_TURNOVER_V2_SRV.LoanPaymentPlanPayment" Multiplicity="*" Role="ToRole_LoanContract_LoanPaymentPlanPayment"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_LoanContract_LoanPaymentPlanPayment">
+						<PropertyRef Name="IDSchemeAgencyID"/>
+						<PropertyRef Name="IDSchemeID"/>
+						<PropertyRef Name="ID"/>
+						<PropertyRef Name="BusinessSystemID"/>
+					</Principal>
+					<Dependent Role="ToRole_LoanContract_LoanPaymentPlanPayment">
+						<PropertyRef Name="LContrIDSchemeAgencyID"/>
+						<PropertyRef Name="LContrIDSchemeID"/>
+						<PropertyRef Name="LoanContractID"/>
+						<PropertyRef Name="BusinessSystemID"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityContainer Name="LNS_FINANCIAL_TURNOVER_V2_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+				<EntitySet Name="LoanPaymentPlanPayments" EntityType="LNS_FINANCIAL_TURNOVER_V2_SRV.LoanPaymentPlanPayment" sap:creatable="false"
+					sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+				<EntitySet Name="LoanPaymentPlanExplanations" EntityType="LNS_FINANCIAL_TURNOVER_V2_SRV.LoanPaymentPlanExplanation" sap:creatable="false"
+					sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+				<EntitySet Name="BankAccounts" EntityType="LNS_FINANCIAL_TURNOVER_V2_SRV.BankAccount" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+				<EntitySet Name="PostedLoanFinancialTurnovers" EntityType="LNS_FINANCIAL_TURNOVER_V2_SRV.PostedLoanFinancialTurnover" sap:creatable="false"
+					sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+				<EntitySet Name="LoanContracts" EntityType="LNS_FINANCIAL_TURNOVER_V2_SRV.LoanContract" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+				<AssociationSet Name="LoanContract_LoanPaymentPlanPayment_Asso"
+					Association="LNS_FINANCIAL_TURNOVER_V2_SRV.LoanContract_LoanPaymentPlanPayment" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1">
+					<End EntitySet="LoanContracts" Role="FromRole_LoanContract_LoanPaymentPlanPayment"/>
+					<End EntitySet="LoanPaymentPlanPayments" Role="ToRole_LoanContract_LoanPaymentPlanPayment"/>
+				</AssociationSet>
+				<AssociationSet Name="LoanContract_LoanPaymentPlanExplan_Assoc"
+					Association="LNS_FINANCIAL_TURNOVER_V2_SRV.LoanContract_LoanPaymentPlanExplan" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1">
+					<End EntitySet="LoanContracts" Role="FromRole_LoanContract_LoanPaymentPlanExplan"/>
+					<End EntitySet="LoanPaymentPlanExplanations" Role="ToRole_LoanContract_LoanPaymentPlanExplan"/>
+				</AssociationSet>
+				<AssociationSet Name="BankAccount_PostedLoanFinancialTurnover_"
+					Association="LNS_FINANCIAL_TURNOVER_V2_SRV.BankAccount_PostedLoanFinancialTurnover" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1">
+					<End EntitySet="BankAccounts" Role="FromRole_BankAccount_PostedLoanFinancialTurnover"/>
+					<End EntitySet="PostedLoanFinancialTurnovers" Role="ToRole_BankAccount_PostedLoanFinancialTurnover"/>
+				</AssociationSet>
+			</EntityContainer>
+			<atom:link rel="self" href="https://ldcif6u.wdf.sap.corp:44304/sap/opu/odata/SAP/LNS_FINANCIAL_TURNOVER_V2_SRV/$metadata"
+				xmlns:atom="http://www.w3.org/2005/Atom"/>
+			<atom:link rel="latest-version" href="https://ldcif6u.wdf.sap.corp:44304/sap/opu/odata/SAP/LNS_FINANCIAL_TURNOVER_V2_SRV/$metadata"
+				xmlns:atom="http://www.w3.org/2005/Atom"/>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

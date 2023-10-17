@@ -1,0 +1,8 @@
+<!-- This message page is displayed in navigation container for message pages of the MainPage View in case tehre is an technical error  -->
+<mvc:View controllerName="fs.cb.consumerloan.manages1.controller.NotFound" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<MessagePage description="" icon="{sap-icon://product}" id="errorPage" showHeader="false" text="{path: 'message>/', formatter: '.getErrorPageText'}">
+		<customDescription id="errorPageDescription">
+			<Link id="errorPageLink" press="onLinkPressed" text="{i18n>backToStartPage}"/>
+		</customDescription>
+	</MessagePage>
+</mvc:View>

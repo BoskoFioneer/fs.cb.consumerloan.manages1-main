@@ -1,0 +1,676 @@
+[{
+	"BankAccountInternalID": "16A68B51D7301EE78DC88CDCD4B1A21C",
+	"ID": "DE53904210810010030023",
+	"BkAcctID": "0010030023",
+	"BkAcctStandardID": "DE53904210810010030023",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90421081",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "Musterbank",
+	"AcctHldrPartyInternalID": "TD4",
+	"AcctHldrPartyFormattedName": "Pavan Kamat",
+	"BankAccountContractGroupCode": "0020",
+	"BankAccountContractGroupName": "Retail Consumer Loan",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "50002196",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('2222CE49D3CB1EE5BCB38CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "D8F940AAFA621ED6A5EB8CDCD4B1A21C",
+	"ID": "DE40904199160010014883",
+	"BkAcctID": "0010014883",
+	"BkAcctStandardID": "DE40904199160010014883",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90419916",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "AUTEST01",
+	"AcctHldrPartyFormattedName": "Vincenz Dorner",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('D8F940AAFA621ED6A5EB8CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "4D218658319B1EE5B8BA8CDCD4B1A21C",
+	"ID": "DE32900000010010004843",
+	"BkAcctID": "0010004843",
+	"BkAcctStandardID": "DE32900000010010004843",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90000001",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "MUSTERBANK",
+	"AcctHldrPartyFormattedName": "Musterbank",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('4D218658319B1EE5B8BA8CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "97D0733D67C71EE696AB8CDCD4B1A21C",
+	"ID": "DE11904201640010012371",
+	"BkAcctID": "0010012371",
+	"BkAcctStandardID": "DE11904201640010012371",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90420164",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "AUTEST01",
+	"AcctHldrPartyFormattedName": "Vincenz Dorner",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('97D0733D67C71EE696AB8CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "5FEAAF8516EB1EE6BAA78CDCD4B1A21C",
+	"ID": "DE91904199160010022307",
+	"BkAcctID": "0010022307",
+	"BkAcctStandardID": "DE91904199160010022307",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90419916",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "AUTEST01",
+	"AcctHldrPartyFormattedName": "Vincenz Dorner",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('5FEAAF8516EB1EE6BAA78CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "BA4A9AC7D5641ED6B7E08CDCD4B1A21C",
+	"ID": "DE97904199170010019919",
+	"BkAcctID": "0010019919",
+	"BkAcctStandardID": "DE97904199170010019919",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90419917",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "AUTEST01",
+	"AcctHldrPartyFormattedName": "Vincenz Dorner",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('BA4A9AC7D5641ED6B7E08CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "D219F19AC0C51EE693E88CDCD4B1A21C",
+	"ID": "DE87904201640010011488",
+	"BkAcctID": "0010011488",
+	"BkAcctStandardID": "DE87904201640010011488",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90420164",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "AUTEST01",
+	"AcctHldrPartyFormattedName": "Vincenz Dorner",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('D219F19AC0C51EE693E88CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "F6308C26B6521EE6B4CC8CDCD4B1A21C",
+	"ID": "DE24904199160010018663",
+	"BkAcctID": "0010018663",
+	"BkAcctStandardID": "DE24904199160010018663",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90419916",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "AUTEST01",
+	"AcctHldrPartyFormattedName": "Vincenz Dorner",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('F6308C26B6521EE6B4CC8CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "E51C2202B8AC1EE680C08CDCD4B1A21C",
+	"ID": "DE36904199550010007030",
+	"BkAcctID": "0010007030",
+	"BkAcctStandardID": "DE36904199550010007030",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90419955",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "AUTEST01",
+	"AcctHldrPartyFormattedName": "Vincenz Dorner",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('E51C2202B8AC1EE680C08CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "6FD8B5E60C171ED5B3FC8CDCD4B1A21C",
+	"ID": "DE70904200030010002320",
+	"BkAcctID": "0010002320",
+	"BkAcctStandardID": "DE70904200030010002320",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90420003",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "MUSTERBANK",
+	"AcctHldrPartyFormattedName": "Musterbank",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('6FD8B5E60C171ED5B3FC8CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "8DCFD7BFD8EF1EE6939D8CDCD4B1A21C",
+	"ID": "DE87904201640010011197",
+	"BkAcctID": "0010011197",
+	"BkAcctStandardID": "DE87904201640010011197",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90420164",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "AUTEST01",
+	"AcctHldrPartyFormattedName": "Vincenz Dorner",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('8DCFD7BFD8EF1EE6939D8CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "98DFE39708301EE694CF8CDCD4B1A21C",
+	"ID": "DE66904201640010011672",
+	"BkAcctID": "0010011672",
+	"BkAcctStandardID": "DE66904201640010011672",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90420164",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "AUTEST01",
+	"AcctHldrPartyFormattedName": "Vincenz Dorner",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('98DFE39708301EE694CF8CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "6B6B773DE1781ED698DE8CDCD4B1A21C",
+	"ID": "DE58904199160010013007",
+	"BkAcctID": "0010013007",
+	"BkAcctStandardID": "DE58904199160010013007",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90419916",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "AUTEST01",
+	"AcctHldrPartyFormattedName": "Vincenz Dorner",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('6B6B773DE1781ED698DE8CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "259C2BB7D7B11EE6BAA78CDCD4B1A21C",
+	"ID": "DE47904199160010022323",
+	"BkAcctID": "0010022323",
+	"BkAcctStandardID": "DE47904199160010022323",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90419916",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "AUTEST01",
+	"AcctHldrPartyFormattedName": "Vincenz Dorner",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('259C2BB7D7B11EE6BAA78CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "A9169EB98AED1ED691FD8CDCD4B1A21C",
+	"ID": "DE06904201700010010906",
+	"BkAcctID": "0010010906",
+	"BkAcctStandardID": "DE06904201700010010906",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90420170",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "PAVAN",
+	"AcctHldrPartyFormattedName": "Pavan Kamat",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('A9169EB98AED1ED691FD8CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "3191674977061ED5B9EE8CDCD4B1A21C",
+	"ID": "DE52900000010010005356",
+	"BkAcctID": "0010005356",
+	"BkAcctStandardID": "DE52900000010010005356",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90000001",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "MUSTERBANK",
+	"AcctHldrPartyFormattedName": "Musterbank",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('3191674977061ED5B9EE8CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "B5983D7A9CB31ED693FB8CDCD4B1A21C",
+	"ID": "DE91904201640010011513",
+	"BkAcctID": "0010011513",
+	"BkAcctStandardID": "DE91904201640010011513",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90420164",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "AUTEST01",
+	"AcctHldrPartyFormattedName": "Vincenz Dorner",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('B5983D7A9CB31ED693FB8CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "AAB5BF98C2CF1EE5B78D8CDCD4B1A21C",
+	"ID": "DE46904199170010003571",
+	"BkAcctID": "0010003571",
+	"BkAcctStandardID": "DE46904199170010003571",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90419917",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "AUTEST01",
+	"AcctHldrPartyFormattedName": "Vincenz Dorner",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('AAB5BF98C2CF1EE5B78D8CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "14AECFCF166B1EE5B8BB8CDCD4B1A21C",
+	"ID": "DE64900000010010004849",
+	"BkAcctID": "0010004849",
+	"BkAcctStandardID": "DE64900000010010004849",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90000001",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "MUSTERBANK",
+	"AcctHldrPartyFormattedName": "Musterbank",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('14AECFCF166B1EE5B8BB8CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "3966DD951D6E1EE5A8E58CDCD4B1A21C",
+	"ID": "DE45900000010010000632",
+	"BkAcctID": "0010000632",
+	"BkAcctStandardID": "DE45900000010010000632",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90000001",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "MUSTERBANK",
+	"AcctHldrPartyFormattedName": "Musterbank",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('3966DD951D6E1EE5A8E58CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "51ED143DA0E81ED5A7E08CDCD4B1A21C",
+	"ID": "DE93904199550010000572",
+	"BkAcctID": "0010000572",
+	"BkAcctStandardID": "DE93904199550010000572",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90419955",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "AUTEST01",
+	"AcctHldrPartyFormattedName": "Vincenz Dorner",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('51ED143DA0E81ED5A7E08CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "8795333482881EE693E98CDCD4B1A21C",
+	"ID": "DE11904201640010011498",
+	"BkAcctID": "0010011498",
+	"BkAcctStandardID": "DE11904201640010011498",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90420164",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "AUTEST01",
+	"AcctHldrPartyFormattedName": "Vincenz Dorner",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('8795333482881EE693E98CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "B705D21E841D1EE6AAE38CDCD4B1A21C",
+	"ID": "DE32904199830010015430",
+	"BkAcctID": "0010015430",
+	"BkAcctStandardID": "DE32904199830010015430",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90419983",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "MN",
+	"AcctHldrPartyFormattedName": "sergio garcia",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('B705D21E841D1EE6AAE38CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "8464AAD088611EE6B7958CDCD4B1A21C",
+	"ID": "DE76904200330010019560",
+	"BkAcctID": "0010019560",
+	"BkAcctStandardID": "DE76904200330010019560",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90420033",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "AUTEST01",
+	"AcctHldrPartyFormattedName": "Vincenz Dorner",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('8464AAD088611EE6B7958CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}, {
+	"BankAccountInternalID": "96EE0946A4FB1ED695948CDCD4B1A21C",
+	"ID": "DE09904201640010011922",
+	"BkAcctID": "0010011922",
+	"BkAcctStandardID": "DE09904201640010011922",
+	"BkCountryCode": "DE",
+	"BkRoutingID": "90420164",
+	"KeyCode": "SAP01",
+	"IDSchemeAgencyID": "310",
+	"IDSchemeID": "BAC.001",
+	"BusinessSystemID": "F6D_100",
+	"ProductionControlID": "S_LOAN_IL",
+	"OplBkContrMgmtUnitDescription": "",
+	"AcctHldrPartyInternalID": "AUTEST01",
+	"AcctHldrPartyFormattedName": "Vincenz Dorner",
+	"BankAccountContractGroupCode": "0040",
+	"BankAccountContractGroupName": "",
+	"AcctAuthorizationGroup": "",
+	"OplBkContrMgmtUnitID": "00000000",
+	"AcctHldrAuthorizationGroup": "",
+	"AcctHldrEmployeeIndicator": false,
+	"AcctHldrCurrentUserIndicator": "",
+	"to_AccountValueHelp": {
+		"__deferred": {
+			"uri": "/sap/opu/odata/SAP/BANKACCOUNTCONTRACTSEARCH_SRV/Fs_C_Acs_Bac_0004('96EE0946A4FB1ED695948CDCD4B1A21C')/to_AccountValueHelp"
+		}
+	}
+}]

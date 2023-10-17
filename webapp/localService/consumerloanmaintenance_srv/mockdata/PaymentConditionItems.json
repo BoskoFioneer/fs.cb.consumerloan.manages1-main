@@ -1,0 +1,22 @@
+[{
+	"BkAcctContrID": "DE53904210810010030023",
+	"BkAcctContrIDSchmID": "BAC.001",
+	"BkAcctContrIDSchmAgcyID": "310",
+	"BusinessSystemID": "F6D_100",
+	"OrdinalNumberValue": 1,
+	"BkContrFinCndnTypeCode": "510220",
+	"BkContrFinCndnTypeName": "Receivable (IL) ChargeDue",
+	"PaymentText": "0.00 EUR",
+	"IndividualIndicator": true
+},
+{
+	"BkAcctContrID": "DE53904210810010030023",
+	"BkAcctContrIDSchmID": "BAC.001",
+	"BkAcctContrIDSchmAgcyID": "310",
+	"BusinessSystemID": "F6D_100",
+	"OrdinalNumberValue": 2,
+	"BkContrFinCndnTypeCode": "510050",
+	"BkContrFinCndnTypeName": "Receivable:Installment IL",
+	"PaymentText": "850.00 EUR",
+	"IndividualIndicator": false
+}]

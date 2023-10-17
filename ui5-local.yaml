@@ -1,0 +1,58 @@
+specVersion: "3.1"
+metadata:
+  name: fs.cb.consumerloan.manages1
+type: application
+framework:
+  name: SAPUI5
+  version: 1.119.0
+  libraries:
+    - name: sap.ui.core
+    - name: sap.m
+    - name: sap.ui.comp
+    - name: sap.ui.unified
+    - name: sap.uxap
+    - name: sap.ui.layout
+    - name: sap.viz
+    - name: sap.suite.ui.commons
+    - name: sap.f
+    - name: sap.ushell
+    - name: sap.collaboration
+    - name: sap.ui.generic.app
+    - name: sap.ui.table
+    - name: themelib_sap_belize
+    - name: themelib_sap_bluecrystal
+    - name: themelib_sap_fiori_3
+server:
+  customMiddleware:
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        ignoreCertError: false
+        backend:
+          - path: /sap
+            url: https://vh-fdc02-fc1.fsic.sap.corp:44310
+            client: "100"
+            destination: F8OCLNT100
+          - path: /sap/opu/odata/sap/consumerloanmaintenance_srv/
+            destination: F8OCLNT100
+            url: https://vh-fdc02-fc1.fsic.sap.corp:44310
+            client: "100"
+          - path: /sap/opu/odata/sap/BANKACCOUNTCONTRACTSEARCH_SRV
+            destination: F8BCLNT100
+            url: https://vh-fdc02-fc1.fsic.sap.corp:44310
+            client: "100"
+          - path: /sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='BANKACCOUNTCONTRACTSEAR_ANNO_MDL',Version='0001')/$value
+            destination: F8BCLNT100
+            url: https://vh-fdc02-fc1.fsic.sap.corp:44310
+            client: "100"
+    - name: fiori-tools-appreload
+      afterMiddleware: compression
+      configuration:
+        port: 35729
+        path: webapp
+        delay: 300
+    - name: fiori-tools-preview
+      afterMiddleware: fiori-tools-appreload
+      configuration:
+        component: fs.cb.consumerloan.manages1
+        ui5Theme: sap_fiori_3

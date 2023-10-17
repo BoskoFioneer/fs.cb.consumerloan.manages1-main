@@ -1,0 +1,113 @@
+[{
+	"BkAcctIdfgElmnts": {
+		"ID": "0010030023",
+		"StandardID": "DE53904210810010030023",
+		"IntID": "16A68B51D7301EE78DC88CDCD4B1A21C",
+		"CurrencyCode": "EUR",
+		"BkStandardID": "DE53904210810010030023",
+		"BkRoutingID": "90421081",
+		"BkCountryCode": "EUR"
+	},
+	"EffectiveCapitalAmount": {
+		"Content": 9188.89,
+		"CurrencyCode": "EUR"
+	},
+	"DsbursdCptlAmt": {
+		"Content": 10000.00,
+		"CurrencyCode": "EUR"
+	},
+	"ContrctCptlAmt": {
+		"Content": 10000.00,
+		"CurrencyCode": "EUR"
+	},
+	"OtstndngIntrstAmt": {
+		"Content": 21.70,
+		"CurrencyCode": "EUR"
+	},
+	"OtstndngChrgsAmt": {
+		"Content": 105.00,
+		"CurrencyCode": "EUR"
+	},
+	"AccumultdCrdtIntrstAmt": {
+		"Content": 60.59,
+		"CurrencyCode": "EUR"
+	},
+	"SettledIntrst": {
+		"Content": "0.00",
+		"CurrencyCode": "EUR"
+	},
+	"BkAcctContrID": "DE53904210810010030023",
+	"BkAcctContrIDSchmID": "BAC.001",
+	"BkAcctContrIDSchmAgcyID": "310",
+	"BusinessSystemID": "F6D_100",
+	"CreationDate": "/Date(1494441000000)/",
+	"CurrentContractChangeDate": "/Date(1494441000000)/",
+	"AcctHldrPartyInternalID": "TD4",
+	"OplBkContrMgmtUnitID": "50002196",
+	"PrdctnCntrlID": "S_LOAN_IL",
+	"PrdctnCntrlDscrptn": "Retail Consumer Loan",
+	"TermSpecificationStartDate": "/Date(978373800000)/",
+	"TermSpecificationEndDate": "/Date(1009909800000)/",
+	"TermAgreementStartDate": "/Date(978373800000)/",
+	"TermAgreementEndDate": "/Date(1009909800000)/",
+	"IncmngPymntAgrmntStrtDt": "/Date(978373800000)/",
+	"IncmngPymntAgrmntEndDt": "/Date(1009909800000)/",
+	"EffectiveInterestRateText": "            33.446024"
+
+}, {
+	"BkAcctIdfgElmnts": {
+		"ID": "0010014883",
+		"StandardID": "DE40904199160010014883",
+		"IntID": "D8F940AAFA621ED6A5EB8CDCD4B1A21C",
+		"CurrencyCode": "EUR",
+		"BkStandardID": "DE40904199160010014883",
+		"BkRoutingID": "90419916",
+		"BkCountryCode": "EUR"
+	},
+	"EffectiveCapitalAmount": {
+		"Content": 85000.00,
+		"CurrencyCode": "EUR"
+	},
+	"DsbursdCptlAmt": {
+		"Content": 20000.00,
+		"CurrencyCode": "EUR"
+	},
+	"ContrctCptlAmt": {
+		"Content": 30000.00,
+		"CurrencyCode": "EUR"
+	},
+	"OtstndngIntrstAmt": {
+		"Content": 21.70,
+		"CurrencyCode": "EUR"
+	},
+	"OtstndngChrgsAmt": {
+		"Content": 535.00,
+		"CurrencyCode": "EUR"
+	},
+	"AccumultdCrdtIntrstAmt": {
+		"Content": 50.59,
+		"CurrencyCode": "EUR"
+	},
+	"SettledIntrst": {
+		"Content": "0.00",
+		"CurrencyCode": "EUR"
+	},
+	"BkAcctContrID": "DE40904199160010014883",
+	"BkAcctContrIDSchmID": "BAC.001",
+	"BkAcctContrIDSchmAgcyID": "310",
+	"BusinessSystemID": "F6D_100",
+	"CreationDate": "/Date(1494441000000)/",
+	"CurrentContractChangeDate": "/Date(1494441000000)/",
+	"AcctHldrPartyInternalID": "Vincenz Dorner",
+	"OplBkContrMgmtUnitID": "00000000",
+	"PrdctnCntrlID": "S_LOAN_IL",
+	"PrdctnCntrlDscrptn": "",
+	"TermSpecificationStartDate": "/Date(978373800000)/",
+	"TermSpecificationEndDate": "/Date(1009909800000)/",
+	"TermAgreementStartDate": "/Date(978373800000)/",
+	"TermAgreementEndDate": "/Date(1009909800000)/",
+	"IncmngPymntAgrmntStrtDt": "/Date(978373800000)/",
+	"IncmngPymntAgrmntEndDt": "/Date(1009909800000)/",
+	"EffectiveInterestRateText": "            33.446024"
+
+}]

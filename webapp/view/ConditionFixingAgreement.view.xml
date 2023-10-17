@@ -1,0 +1,30 @@
+<mvc:View controllerName="fs.cb.consumerloan.manages1.controller.Agreements" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form">
+	<f:Form editable="false" id="conditionFixingAgreementForm" width="100%">
+		<f:layout>
+			<f:ResponsiveGridLayout columnsL="3" columnsM="2" id="conditionFixingPeriodDisplay" labelSpanL="12" labelSpanM="12"/>
+		</f:layout>
+		<f:FormContainer id="cfaStartDateContainer">
+			<f:FormElement id="cfaStartDateElement" label="{i18n>xfld.startDate}">
+				<f:label>
+					<Label id="cfaStartDateLabel" text="{i18n>xfld.startDate}" labelFor="cfaStartDateField"/>
+				</f:label>
+				<f:fields>
+					<Text id="cfaStartDateField"
+						text="{parts:[{path:'TermAgreementStartDate'}], type: 'sap.ui.model.type.Date', formatter:'.formatter.getFormattedDate'}"/>
+				</f:fields>
+			</f:FormElement>
+		</f:FormContainer>
+		<f:FormContainer id="cfaEndDateContainer">
+			<f:FormElement id="cfaEndDateElement" label="{i18n>xfld.endDate}">
+				<f:label>
+					<Label id="cfaEndDateLabel" text="{i18n>xfld.endDate}" labelFor="cfaEndDatefield"/>
+				</f:label>
+				<f:fields>
+					<Text id="cfaEndDatefield"
+						text="{parts:[{path:'TermAgreementEndDate'}], type: 'sap.ui.model.type.Date', formatter:'.formatter.getFormattedDate'}"/>
+				</f:fields>
+			</f:FormElement>
+		</f:FormContainer>
+	</f:Form>
+</mvc:View>

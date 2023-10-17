@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<!-- Extends the ContractManagerCard fragment -->
+	<core:ExtensionPoint name="ExtContractManagerCard">
+	<QuickView id="contractManagerQuickView" afterClose="afterClose" afterOpen="afterOpen" busy="{= ${cardModel>/open} &amp;&amp; ${cardModel>/loading}}" placement="Auto">
+		<QuickViewPage description="{ID}" groups="{ path : 'contact>/groups', templateShareable : 'true'}" header="{i18n>xfld.contractManager}"
+			icon="sap-icon://company-view" id="contractManagerPage" title="{Description}">
+			<QuickViewGroup id="contractManagerPageGroup" elements="{ path : 'contact>elements', templateShareable : 'true'}"
+				heading="{contact>heading}">
+				<QuickViewGroupElement id="contractManagerPageElement" label="{contact>label}" type="{= ${contact>value} === '' ? ${cardModel>/elementType} : ${contact>elementType}}" value="{path : 'contact>value', formatter: '.formatter.formatNoText'}"/>
+			</QuickViewGroup>
+		</QuickViewPage>
+	</QuickView>
+	</core:ExtensionPoint>
+</core:FragmentDefinition>

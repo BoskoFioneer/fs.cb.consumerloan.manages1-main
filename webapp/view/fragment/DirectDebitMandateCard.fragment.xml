@@ -1,0 +1,16 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<!-- Extends the DirectDebitMandateCard fragment -->
+	<core:ExtensionPoint name="ExtDirectDebitMandateCard">
+		<QuickView id="directDebitMandateQuickView" afterClose="afterClose" afterOpen="afterOpen"
+			busy="{= ${cardModel>/open} &amp;&amp; ${cardModel>/loading}}" placement="Auto">
+			<QuickViewPage groups="{ path : 'mandate>/groups', templateShareable : 'true'}" header="{i18n>xfld.accountMandate}"
+				id="directDebitMandatQuickViewPage">
+				<QuickViewGroup id="directDebitMandatePageGroup" elements="{ path : 'mandate>elements', templateShareable : 'true'}"
+					heading="{mandate>heading}">
+					<QuickViewGroupElement id="directDebitMandatePageElement" label="{mandate>label}" type="{mandate>elementType}"
+						value="{path: 'mandate>value' , formatter: '.formatter.formatNoText'}"/>
+				</QuickViewGroup>
+			</QuickViewPage>
+		</QuickView>
+	</core:ExtensionPoint>
+</core:FragmentDefinition>

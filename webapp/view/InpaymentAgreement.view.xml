@@ -1,0 +1,30 @@
+<mvc:View controllerName="fs.cb.consumerloan.manages1.controller.Agreements" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form">
+	<f:Form editable="false" id="inpaymentAgreementPeriodForm" width="100%">
+		<f:layout>
+			<f:ResponsiveGridLayout columnsL="3" columnsM="2" id="inpaymentAgreementPeriodDisplay" labelSpanL="12" labelSpanM="12"/>
+		</f:layout>
+		<f:FormContainer id="ipaStartDateContainer">
+			<f:FormElement id="ipaStartDateElement" label="{i18n>xfld.startDate}">
+				<f:label>
+					<Label id="ipaStartDateLabel" text="{i18n>xfld.startDate}" labelFor="startDatefield"/>
+				</f:label>
+				<f:fields>
+					<Text id="startDatefield"
+						text="{parts:[{path:'IncmngPymntAgrmntStrtDt'}], type: 'sap.ui.model.type.Date', formatter:'.formatter.getFormattedDate'}"/>
+				</f:fields>
+			</f:FormElement>
+		</f:FormContainer>
+		<f:FormContainer id="ipaEndDateContainer">
+			<f:FormElement id="ipaEndDateElement" label="{i18n>xfld.endDate}">
+				<f:label>
+					<Label id="ipaEndDateLabel" text="{i18n>xfld.endDate}" labelFor="endDatefield"/>
+				</f:label>
+				<f:fields>
+					<Text id="endDatefield"
+						text="{parts:[{path:'IncmngPymntAgrmntEndDt'}], type: 'sap.ui.model.type.Date', formatter:'.formatter.getFormattedDate'}"/>
+				</f:fields>
+			</f:FormElement>
+		</f:FormContainer>
+	</f:Form>
+</mvc:View>

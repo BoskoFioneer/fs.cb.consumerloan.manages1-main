@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema Namespace="CONSUMERLOANMAINTENANCE_SRV" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="ConsumerLoan" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="BkAcctContrID"/>
+					<PropertyRef Name="BkAcctContrIDSchmID"/>
+					<PropertyRef Name="BkAcctContrIDSchmAgcyID"/>
+					<PropertyRef Name="BusinessSystemID"/>
+				</Key>
+				<Property Name="BkAcctIdfgElmnts" Type="CONSUMERLOANMAINTENANCE_SRV.CTBkAcctIdfgElmnts" Nullable="false"/>
+				<Property Name="EffectiveCapitalAmount" Type="CONSUMERLOANMAINTENANCE_SRV.CTAmount" Nullable="false"/>
+				<Property Name="DsbursdCptlAmt" Type="CONSUMERLOANMAINTENANCE_SRV.CTAmount" Nullable="false"/>
+				<Property Name="ContrctCptlAmt" Type="CONSUMERLOANMAINTENANCE_SRV.CTAmount" Nullable="false"/>
+				<Property Name="OtstndngIntrstAmt" Type="CONSUMERLOANMAINTENANCE_SRV.CTAmount" Nullable="false"/>
+				<Property Name="OtstndngChrgsAmt" Type="CONSUMERLOANMAINTENANCE_SRV.CTAmount" Nullable="false"/>
+				<Property Name="AccumultdCrdtIntrstAmt" Type="CONSUMERLOANMAINTENANCE_SRV.CTAmount" Nullable="false"/>
+				<Property Name="SettledIntrst" Type="CONSUMERLOANMAINTENANCE_SRV.CTAmount" Nullable="false"/>
+				<Property Name="BkAcctContrID" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false"
+					sap:label="Content Field for BankAccountContractID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkAcctContrIDSchmID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkAcctContrIDSchmAgcyID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BusinessSystemID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false"
+					sap:label="Data Element for BusinessSystemID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="CreationDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:unicode="false" sap:label="Data Element for Date"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="CurrentContractChangeDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:unicode="false"
+					sap:label="Data Element for Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="AcctHldrPartyInternalID" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false"
+					sap:label="Data Element for BusinessPartnerInternalID" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="OplBkContrMgmtUnitID" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false"
+					sap:label="Data Element for OrganisationalCentreID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="PrdctnCntrlID" Type="Edm.String" MaxLength="32" sap:unicode="false"
+					sap:label="Content Field for BankAccountContractProductionControlID" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="PrdctnCntrlDscrptn" Type="Edm.String" MaxLength="80" sap:unicode="false" sap:label="Content Field for MEDIUM_Description"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="TermSpecificationStartDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:unicode="false"
+					sap:label="Data Element for Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="TermSpecificationEndDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:unicode="false"
+					sap:label="Data Element for Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="TermAgreementStartDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:unicode="false"
+					sap:label="Data Element for Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="TermAgreementEndDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:unicode="false"
+					sap:label="Data Element for Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="IncmngPymntAgrmntStrtDt" Type="Edm.DateTime" Nullable="false" Precision="0" sap:unicode="false"
+					sap:label="Data Element for Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="IncmngPymntAgrmntEndDt" Type="Edm.DateTime" Nullable="false" Precision="0" sap:unicode="false"
+					sap:label="Data Element for Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="EffectiveInterestRateText" Type="Edm.String" MaxLength="22" sap:unicode="false" sap:label="Effective Interest Rate Text"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<NavigationProperty Name="PymntTrnsctnInstrctns" Relationship="CONSUMERLOANMAINTENANCE_SRV.ConsumerLoan_PymntTrnsctnInstrctn"
+					FromRole="FromRole_ConsumerLoan_PymntTrnsctnInstrctn" ToRole="ToRole_ConsumerLoan_PymntTrnsctnInstrctn"/>
+			</EntityType>
+			<EntityType Name="BorrowerParty" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="InternalID"/>
+					<PropertyRef Name="BusinessSystemID"/>
+				</Key>
+				<Property Name="InternalID" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false"
+					sap:label="Data Element for BusinessPartnerInternalID" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="BusinessSystemID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false"
+					sap:label="Data Element for BusinessSystemID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="UUID" Type="Edm.Guid" sap:unicode="false" sap:label="Content Field for UUID" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="CategoryCode" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false"
+					sap:label="Data Element for BusinessPartnerCategoryCode" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="BusinessPartnerFormattedName" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false"
+					sap:label="Data Element for LANGUAGEINDEPENDENT_LONG_Name" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="CustomGroupCode" Type="Edm.String" MaxLength="4" sap:unicode="false"
+					sap:label="Content Field for BusinessPartnerCustomGroupCode" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="CustomGroupName" Type="Edm.String" MaxLength="40" sap:unicode="false"
+					sap:label="Data Element for LANGUAGEINDEPENDENT_MEDIUM_Name" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="PersonBirthPlaceName" Type="Edm.String" MaxLength="40" sap:unicode="false"
+					sap:label="Data Element for LANGUAGEINDEPENDENT_MEDIUM_Name" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="PersonBirthDate" Type="Edm.DateTime" Precision="0" sap:unicode="false" sap:label="Data Element for Date"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="TelephoneDefaultFrmtdNoDesc" Type="Edm.String" MaxLength="80" sap:unicode="false"
+					sap:label="Data Element for LANGUAGEINDEPENDENT_MEDIUM_Description" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="EMailDefaultURI" Type="Edm.String" sap:unicode="false" sap:label="Content Field for Description" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="DefaultCreditRatingCode" Type="Edm.String" MaxLength="10" sap:unicode="false" sap:label="Content Field for CreditRatingCode"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="DefaultCreditRatingName" Type="Edm.String" MaxLength="40" sap:unicode="false"
+					sap:label="Data Element for LANGUAGEINDEPENDENT_MEDIUM_Name" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="FormattedDefaultAddressDesc" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false"
+					sap:label="Data Element for LANGUAGEINDEPENDENT_MEDIUM_Description" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<NavigationProperty Name="RelatedParties" Relationship="CONSUMERLOANMAINTENANCE_SRV.BorrowerParty_RelatedParties"
+					FromRole="FromRole_BorrowerParty_RelatedParties" ToRole="ToRole_BorrowerParty_RelatedParties"/>
+			</EntityType>
+			<EntityType Name="RelatedParty" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="InternalID"/>
+					<PropertyRef Name="BusinessSystemID"/>
+					<PropertyRef Name="BPRelshpRoleCode"/>
+				</Key>
+				<Property Name="InternalID" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false"
+					sap:label="Data Element for BusinessPartnerInternalID" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="BusinessSystemID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false"
+					sap:label="Data Element for BusinessSystemID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="UUID" Type="Edm.Guid" sap:unicode="false" sap:label="Content Field for UUID" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BPRelshpRoleCode" Type="Edm.String" Nullable="false" MaxLength="8" sap:unicode="false"
+					sap:label="Content Field for BusinessPartnerRelationshipRoleCode" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="BPRelshpRoleName" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false"
+					sap:label="Data Element for LANGUAGEINDEPENDENT_LONG_Name" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="AcctHldrPartyInternalID" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false"
+					sap:label="Data Element for BusinessPartnerInternalID" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="BusinessPartnerFormattedName" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false"
+					sap:label="Data Element for LANGUAGEINDEPENDENT_LONG_Name" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="FormattedDefaultAddressDesc" Type="Edm.String" MaxLength="80" sap:unicode="false"
+					sap:label="Data Element for LANGUAGEINDEPENDENT_MEDIUM_Description" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="TelephoneDefaultFrmtdNoDesc" Type="Edm.String" MaxLength="80" sap:unicode="false"
+					sap:label="Data Element for LANGUAGEINDEPENDENT_MEDIUM_Description" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="EMailDefaultURI" Type="Edm.String" sap:unicode="false" sap:label="Content Field for Description" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+			</EntityType>
+			<EntityType Name="OplBkContrMgmtUnit" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="ID"/>
+					<PropertyRef Name="BusinessSystemID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false"
+					sap:label="Data Element for OrganisationalCentreID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BusinessSystemID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false"
+					sap:label="Data Element for BusinessSystemID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="Description" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false"
+					sap:label="Data Element for LANGUAGEINDEPENDENT_MEDIUM_Description" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="TelephoneDefaultFrmtdNoDesc" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false"
+					sap:label="Data Element for LANGUAGEINDEPENDENT_MEDIUM_Description" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="EMailDefaultURI" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Content Field for Description"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+			</EntityType>
+			<EntityType Name="Receivable" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="Id"/>
+					<PropertyRef Name="BusinessSystemId"/>
+					<PropertyRef Name="BkAcctIntId"/>
+					<PropertyRef Name="BkAcctintIdSchmAgcyId"/>
+				</Key>
+				<Property Name="OutstandingAmount" Type="CONSUMERLOANMAINTENANCE_SRV.CTAmount" Nullable="false"/>
+				<Property Name="CounterPartyBankAccount" Type="CONSUMERLOANMAINTENANCE_SRV.CTBankAccount" Nullable="false"/>
+				<Property Name="DirectDebitMandate" Type="CONSUMERLOANMAINTENANCE_SRV.CTDirectDebitMandate" Nullable="false"/>
+				<Property Name="BkAcctIdfgElmnts" Type="CONSUMERLOANMAINTENANCE_SRV.CTBkAcctIdfgElmnts" Nullable="false"/>
+				<Property Name="Id" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="It is an identifier of a receivable."
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BusinessSystemId" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false"
+					sap:label="Data Element for BusinessSystemID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkAcctIntId" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Internal ID"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkAcctintIdSchmAgcyId" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Scheme Agency ID"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="Typecode" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="Type Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="Typename" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Content Field for MEDIUM_Name"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="WrkngDayAdjstdBllAmntPymntDue" Type="Edm.DateTime" Nullable="false" Precision="0" sap:unicode="false"
+					sap:label="Data Element for Date" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+				<Property Name="DirectDebitCollectionInitiatedIndicator" Type="Edm.Boolean" Nullable="false" sap:unicode="false"
+					sap:label="Data Element for Indicator" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="PaymentTransactionInstructionTypeCode" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false"
+					sap:label="Instruction Code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="PaymentTransactionInstructionTypeName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false"
+					sap:label="Data Element for LANGUAGEINDEPENDENT_MEDIUM_Name" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="ClearedIndicator" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="Cleared Indicator"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+			</EntityType>
+			<EntityType Name="PymntTrnsctnInstrctn" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="BkAcctContrID"/>
+					<PropertyRef Name="BkAcctContrIDSchmID"/>
+					<PropertyRef Name="BkAcctContrIDSchmAgcyID"/>
+					<PropertyRef Name="BusinessSystemID"/>
+					<PropertyRef Name="UUID"/>
+				</Key>
+				<Property Name="CounterPartyBankAccount" Type="CONSUMERLOANMAINTENANCE_SRV.CTBankAccount" Nullable="false"/>
+				<Property Name="DirectDebitMandate" Type="CONSUMERLOANMAINTENANCE_SRV.CTDirectDebitMandate" Nullable="false"/>
+				<Property Name="BkAcctContrID" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false"
+					sap:label="Content Field for BankAccountContractID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkAcctContrIDSchmID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkAcctContrIDSchmAgcyID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BusinessSystemID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false"
+					sap:label="Data Element for BusinessSystemID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="UUID" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="Content Field for UUID" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="TypeCode" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Type Code" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="TypeName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false"
+					sap:label="Data Element for LANGUAGEINDEPENDENT_MEDIUM_Name" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="DisbursementUseIndicator" Type="Edm.Boolean" sap:unicode="false" sap:label="Data Element for Indicator"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BillingUseIndicator" Type="Edm.Boolean" sap:unicode="false" sap:label="Data Element for Indicator" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+			</EntityType>
+			<EntityType Name="DirectDebitMandate" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="ID"/>
+					<PropertyRef Name="CreditorPartyID"/>
+					<PropertyRef Name="BusinessSystemID"/>
+				</Key>
+				<Property Name="DebtorBankAccount" Type="CONSUMERLOANMAINTENANCE_SRV.CTDebPtyBankAccount" Nullable="false"/>
+				<Property Name="ID" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="Content Field for DirectDebitMandateID"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="CreditorPartyID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Content Field for PartyID"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BusinessSystemID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false"
+					sap:label="Data Element for BusinessSystemID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="SignatureDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:unicode="false" sap:label="Data Element for Date"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="ValidityEndDate" Type="Edm.DateTime" Precision="0" sap:unicode="false" sap:label="Data Element for Date"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="DirDebitCollsSEPASeqTypeCode" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false"
+					sap:label="Data Element for DirectDebitCollectionSEPASequenceTypeCode" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="DirDebitCollsSEPASeqTypeName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false"
+					sap:label="Content Field for MEDIUM_Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="CreditorReferenceID" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false"
+					sap:label="Data Element for DirectDebitMandateCreditorReferenceID" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="RelatedDebtorPartyID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false"
+					sap:label="Content Field for PartyID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+			</EntityType>
+			<EntityType Name="PriceConditionItem" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="BkAcctContrID"/>
+					<PropertyRef Name="BkAcctContrIDSchmID"/>
+					<PropertyRef Name="BkAcctContrIDSchmAgcyID"/>
+					<PropertyRef Name="BusinessSystemID"/>
+					<PropertyRef Name="OrdinalNumberValue"/>
+				</Key>
+				<Property Name="BkAcctContrID" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false"
+					sap:label="Content Field for BankAccountContractID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkAcctContrIDSchmID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkAcctContrIDSchmAgcyID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BusinessSystemID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false"
+					sap:label="Data Element for BusinessSystemID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="OrdinalNumberValue" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:label="Data Element for NumberValue"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkContrFinCndnTypeCode" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false"
+					sap:label="Content Field for BankContractFinancialConditionTypeCode" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="BkContrFinCndnTypeName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false"
+					sap:label="Content Field for MEDIUM_Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="PriceText" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false"
+					sap:label="Data Element for LANGUAGEINDEPENDENT_SHORT_Description" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="IndividualIndicator" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="Data Element for Indicator"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+			</EntityType>
+			<EntityType Name="PaymentConditionItem" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="BkAcctContrID"/>
+					<PropertyRef Name="BkAcctContrIDSchmID"/>
+					<PropertyRef Name="BkAcctContrIDSchmAgcyID"/>
+					<PropertyRef Name="BusinessSystemID"/>
+					<PropertyRef Name="OrdinalNumberValue"/>
+				</Key>
+				<Property Name="BkAcctContrID" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false"
+					sap:label="Content Field for BankAccountContractID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkAcctContrIDSchmID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkAcctContrIDSchmAgcyID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BusinessSystemID" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false"
+					sap:label="Data Element for BusinessSystemID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="OrdinalNumberValue" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:label="Data Element for NumberValue"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkContrFinCndnTypeCode" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false"
+					sap:label="Content Field for BankContractFinancialConditionTypeCode" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="BkContrFinCndnTypeName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false"
+					sap:label="Content Field for MEDIUM_Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="PaymentText" Type="Edm.String" MaxLength="40" sap:unicode="false"
+					sap:label="Data Element for LANGUAGEINDEPENDENT_SHORT_Description" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="IndividualIndicator" Type="Edm.Boolean" sap:unicode="false" sap:label="Data Element for Indicator" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+			</EntityType>
+			<ComplexType Name="CTDebPtyBankAccount">
+				<Property Name="HolderName" Type="Edm.String" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="StandardID" Type="Edm.String" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkStandardID" Type="Edm.String" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+			</ComplexType>
+			<ComplexType Name="CTBankAccount">
+				<Property Name="HolderName" Type="Edm.String" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="ID" Type="Edm.String" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="StandardID" Type="Edm.String" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkStandardID" Type="Edm.String" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkRoutingID" Type="Edm.String" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkCountryCode" Type="Edm.String" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkName" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+			</ComplexType>
+			<ComplexType Name="CTDirectDebitMandate">
+				<Property Name="ID" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="CreditorPartyID" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+			</ComplexType>
+			<ComplexType Name="CTAmount">
+				<Property Name="Content" Type="Edm.Decimal" Precision="23" Scale="2" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="CurrencyCode" Type="Edm.String" MaxLength="5" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false" sap:semantics="currency-code"/>
+			</ComplexType>
+			<ComplexType Name="CTBkAcctIdfgElmnts">
+				<Property Name="ID" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="StandardID" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="IntID" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="CurrencyCode" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkStandardID" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkRoutingID" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="BkCountryCode" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+			</ComplexType>
+			<Association Name="BorrowerParty_RelatedParties" sap:content-version="1">
+				<End Type="CONSUMERLOANMAINTENANCE_SRV.BorrowerParty" Multiplicity="1" Role="FromRole_BorrowerParty_RelatedParties"/>
+				<End Type="CONSUMERLOANMAINTENANCE_SRV.RelatedParty" Multiplicity="*" Role="ToRole_BorrowerParty_RelatedParties"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_BorrowerParty_RelatedParties">
+						<PropertyRef Name="BusinessSystemID"/>
+						<PropertyRef Name="InternalID"/>
+					</Principal>
+					<Dependent Role="ToRole_BorrowerParty_RelatedParties">
+						<PropertyRef Name="BusinessSystemID"/>
+						<PropertyRef Name="AcctHldrPartyInternalID"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="ConsumerLoan_PymntTrnsctnInstrctn" sap:content-version="1">
+				<End Type="CONSUMERLOANMAINTENANCE_SRV.ConsumerLoan" Multiplicity="1" Role="FromRole_ConsumerLoan_PymntTrnsctnInstrctn"/>
+				<End Type="CONSUMERLOANMAINTENANCE_SRV.PymntTrnsctnInstrctn" Multiplicity="*" Role="ToRole_ConsumerLoan_PymntTrnsctnInstrctn"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_ConsumerLoan_PymntTrnsctnInstrctn">
+						<PropertyRef Name="BusinessSystemID"/>
+						<PropertyRef Name="BkAcctContrIDSchmAgcyID"/>
+						<PropertyRef Name="BkAcctContrIDSchmID"/>
+						<PropertyRef Name="BkAcctContrID"/>
+					</Principal>
+					<Dependent Role="ToRole_ConsumerLoan_PymntTrnsctnInstrctn">
+						<PropertyRef Name="BusinessSystemID"/>
+						<PropertyRef Name="BkAcctContrIDSchmAgcyID"/>
+						<PropertyRef Name="BkAcctContrIDSchmID"/>
+						<PropertyRef Name="BkAcctContrID"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityContainer Name="CONSUMERLOANMAINTENANCE_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+				<EntitySet Name="ConsumerLoans" EntityType="CONSUMERLOANMAINTENANCE_SRV.ConsumerLoan" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+				<EntitySet Name="BorrowerParties" EntityType="CONSUMERLOANMAINTENANCE_SRV.BorrowerParty" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+				<EntitySet Name="RelatedParties" EntityType="CONSUMERLOANMAINTENANCE_SRV.RelatedParty" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+				<EntitySet Name="OplBkContrMgmtUnits" EntityType="CONSUMERLOANMAINTENANCE_SRV.OplBkContrMgmtUnit" sap:creatable="false"
+					sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+				<EntitySet Name="Receivables" EntityType="CONSUMERLOANMAINTENANCE_SRV.Receivable" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+				<EntitySet Name="PymntTrnsctnInstrctns" EntityType="CONSUMERLOANMAINTENANCE_SRV.PymntTrnsctnInstrctn" sap:creatable="false"
+					sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+				<EntitySet Name="DirectDebitMandates" EntityType="CONSUMERLOANMAINTENANCE_SRV.DirectDebitMandate" sap:creatable="false"
+					sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+				<EntitySet Name="PriceConditionItems" EntityType="CONSUMERLOANMAINTENANCE_SRV.PriceConditionItem" sap:creatable="false"
+					sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+				<EntitySet Name="PaymentConditionItems" EntityType="CONSUMERLOANMAINTENANCE_SRV.PaymentConditionItem" sap:creatable="false"
+					sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+				<AssociationSet Name="ConsumerLoan_PymntTrnsctnInstrctn_AssocS" Association="CONSUMERLOANMAINTENANCE_SRV.ConsumerLoan_PymntTrnsctnInstrctn"
+					sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+					<End EntitySet="ConsumerLoans" Role="FromRole_ConsumerLoan_PymntTrnsctnInstrctn"/>
+					<End EntitySet="PymntTrnsctnInstrctns" Role="ToRole_ConsumerLoan_PymntTrnsctnInstrctn"/>
+				</AssociationSet>
+				<AssociationSet Name="BorrowerParty_RelatedParties_AssocSet" Association="CONSUMERLOANMAINTENANCE_SRV.BorrowerParty_RelatedParties"
+					sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+					<End EntitySet="BorrowerParties" Role="FromRole_BorrowerParty_RelatedParties"/>
+					<End EntitySet="RelatedParties" Role="ToRole_BorrowerParty_RelatedParties"/>
+				</AssociationSet>
+			</EntityContainer>
+			<atom:link rel="self" href="https://ldcif8o.wdf.sap.corp:44300/sap/opu/odata/sap/CONSUMERLOANMAINTENANCE_SRV/$metadata"
+				xmlns:atom="http://www.w3.org/2005/Atom"/>
+			<atom:link rel="latest-version" href="https://ldcif8o.wdf.sap.corp:44300/sap/opu/odata/sap/CONSUMERLOANMAINTENANCE_SRV/$metadata"
+				xmlns:atom="http://www.w3.org/2005/Atom"/>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,30 @@
+<mvc:View controllerName="fs.cb.consumerloan.manages1.controller.Agreements" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form">
+	<f:Form editable="false" id="agreementPeriodForm" width="100%">
+		<f:layout>
+			<f:ResponsiveGridLayout columnsL="3" columnsM="2" id="agreementPeriodDisplay" labelSpanL="12" labelSpanM="12"/>
+		</f:layout>
+		<f:FormContainer id="agrPeriodStartDateContainer">
+			<f:FormElement id="agrPeriodStartDateElement" label="{i18n>xfld.startDate}">
+				<f:label>
+					<Label id="agrPeriodStartDateLabel" text="{i18n>xfld.startDate}" labelFor="agrPeriodStartDateField"/>
+				</f:label>
+				<f:fields>
+					<Text id="agrPeriodStartDateField"
+						text="{parts:[{path:'TermSpecificationStartDate'}], type: 'sap.ui.model.type.Date', formatter:'.formatter.getFormattedDate'}"/>
+				</f:fields>
+			</f:FormElement>
+		</f:FormContainer>
+		<f:FormContainer id="agrPeriodEndDateContainer">
+			<f:FormElement id="agrPeriodEndDateElement" label="{i18n>xfld.endDate}">
+				<f:label>
+					<Label id="agrPeriodEndDateLabel" text="{i18n>xfld.endDate}" labelFor="agrPeriodEndDateField"/>
+				</f:label>
+				<f:fields>
+					<Text id="agrPeriodEndDateField"
+						text="{parts:[{path:'TermSpecificationEndDate'}], type: 'sap.ui.model.type.Date', formatter:'.formatter.getFormattedDate'}"/>
+				</f:fields>
+			</f:FormElement>
+		</f:FormContainer>
+	</f:Form>
+</mvc:View>

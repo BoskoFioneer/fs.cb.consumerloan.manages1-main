@@ -1,0 +1,40 @@
+[{
+	"BkAcctIdfgElmnts": {
+		"ID": "0010030023",
+		"StandardID": "DE53904210810010030023",
+		"IntID": "16A68B51D7301EE78DC88CDCD4B1A21C",
+		"CurrencyCode": "EUR",
+		"BkStandardID": "DE53904210810010030023",
+		"BkRoutingID": "90421081",
+		"BkCountryCode": "EUR"
+	},
+	"OutstandingAmount": {
+		"Content": "455.00",
+		"CurrencyCode": "EUR"
+	},
+	"DirectDebitMandate": {
+		"ID": "",
+		"CreditorPartyID": ""
+	},
+	"CounterPartyBankAccount": {
+		"HolderName": "MUSTERBANK",
+		"ID": "0010011440",
+		"StandardID": "DE64900000110010011440",
+		"BkStandardID": "",
+		"BkRoutingID": "90000011",
+		"BkCountryCode": "DE",
+		"BkName": ""
+	},
+	"Id": "91957",
+	"BusinessSystemId": "F6D_100",
+	"BkAcctIntId": "16A68B51D7301EE78DC88CDCD4B1A21C",
+	"BkAcctintIdSchmAgcyId": "310",
+	"ClearedIndicator": false,
+	"DirectDebitCollectionInitiatedIndicator": false,
+	"WrkngDayAdjstdBllAmntPymntDue": "\/Date(1556300800000)\/",
+	"Typecode": "",
+	"Typename": "Charges",
+	"PaymentTransactionInstructionTypeCode": "1",
+	"PaymentTransactionInstructionTypeName": "Internal"
+
+}]

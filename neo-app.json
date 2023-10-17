@@ -1,0 +1,124 @@
+{
+	"routes": [{
+		"path": "/sap/opu/odata/sap/consumerloanmaintenance_srv/",
+		"target": {
+			"type": "destination",
+			"name": "F8OCLNT100",
+			"entryPath": "/sap/opu/odata/sap/consumerloanmaintenance_srv/"
+		},
+		"description": "OData in Backend System for consumer loans"
+	}, {
+		"path": "/sap/opu/odata/sap/BANKACCOUNTCONTRACTSEARCH_SRV",
+		"target": {
+			"type": "destination",
+			"name": "F8BCLNT100",
+			"entryPath": "/sap/opu/odata/sap/BANKACCOUNTCONTRACTSEARCH_SRV"
+		},
+		"description": "OData in Backend System for Account Search"
+	}, {
+		"path": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='BANKACCOUNTCONTRACTSEAR_ANNO_MDL',Version='0001')/$value",
+		"target": {
+			"type": "destination",
+			"name": "F8BCLNT100",
+			"entryPath": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='BANKACCOUNTCONTRACTSEAR_ANNO_MDL',Version='0001')/$value"
+		},
+		"description": "OData Annotations in Backend System for Account Search Service"
+	}, {
+		"path": "/webapp/resources/sap/fs/cb/lib/commons1",
+		"target": {
+			"type": "application",
+			"name": "fscblibcommons1",
+			"preferLocal": true
+		},
+		"description": "Common Banking Fiori Reuse Library (Web IDE)"
+	}, {
+		"path": "/resources/sap/fs/cb/lib/commons1",
+		"target": {
+			"type": "application",
+			"name": "fscblibcommons1",
+			"preferLocal": true
+		},
+		"description": "Common Banking Fiori Reuse Library (Web IDE)"
+	}, {
+		"path": "/webapp/resources",
+		"target": {
+			"type": "application",
+			"name": "sapui5preview",
+			"version": "snapshot",
+			"entryPath": "/resources"
+		},
+		"description": "SAPUI5 Resources"
+	}, {
+		"path": "/webapp/resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"version": "snapshot",
+			"entryPath": "/resources"
+		},
+		"description": "SAPUI5 Resources"
+	}, {
+		"path": "/webapp/test-resources",
+		"target": {
+			"type": "application",
+			"name": "sapui5preview",
+			"version": "snapshot",
+			"entryPath": "/test-resources"
+		},
+		"description": "SAPUI5 Test Resources"
+	}, {
+		"path": "/webapp/test-resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"version": "snapshot",
+			"entryPath": "/test-resources"
+		},
+		"description": "SAPUI5 Test Resources"
+	}, {
+		"path": "/resources",
+		"target": {
+			"type": "application",
+			"name": "sapui5preview",
+			"version": "snapshot",
+			"entryPath": "/resources"
+		},
+		"description": "SAPUI5 Resources"
+	}, {
+		"path": "/resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"version": "snapshot",
+			"entryPath": "/resources"
+		},
+		"description": "SAPUI5 Resources"
+	}, {
+		"path": "/test-resources",
+		"target": {
+			"type": "application",
+			"name": "sapui5preview",
+			"version": "snapshot",
+			"entryPath": "/test-resources"
+		},
+		"description": "SAPUI5 Test Resources"
+	}, {
+		"path": "/test-resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"version": "snapshot",
+			"entryPath": "/test-resources"
+		},
+		"description": "SAPUI5 Test Resources"
+	}, {
+		"path": "/sap/opu/odata",
+		"target": {
+			"type": "destination",
+			"name": "F8OCLNT100",
+			"version": "snapshot",
+			"entryPath": "/sap/opu/odata"
+		},
+		"description": "F8OCLNT100"
+	}]
+}

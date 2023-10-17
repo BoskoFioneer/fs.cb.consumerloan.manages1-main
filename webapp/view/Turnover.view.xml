@@ -1,0 +1,73 @@
+<mvc:View xmlns:l="sap.core.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+	controllerName="fs.cb.consumerloan.manages1.controller.Turnover" width="auto">
+	<Table busyIndicatorDelay="{tableView>/tableBusyDelay}" enableBusyIndicator="true" id="tableTurnover" inset="false"
+		noDataText=" {tableView>/tableNoDataText}" updateFinished="onUpdateFinished" width="auto">
+		<headerToolbar id="tableTurnoverToolbar">
+			<Toolbar id="tableTurnoverToolbar" visible="true">
+				<Title id="tableTurnoverTitle" text="{tableView>/tableTitle}" visible="false"/>
+				<Select id="turnoverDurationSelect" selectedKey="thisQuarter" ariaLabelledBy="turnoverDurationText" change="onChangeTurnoverDurationSelect">
+					<items>
+						<core:Item id="turnoverDurationUserSpecPeriod" key="dateRange" text="{i18n>xlst.dateRange}"/>
+						<core:Item id="turnoverDurationThisMonth" key="thisMonth" text="{i18n>xlst.thisMonth}"/>
+						<core:Item id="turnoverDurationThisQuarter" key="thisQuarter" text="{i18n>xlst.thisQuarter}"/>
+						<core:Item id="turnoverDurationLastYear" key="thisYear" text="{i18n>xlst.thisYear}"/>
+						<core:Item id="turnoverDurationAll" key="all" text="{i18n>xlst.all}"/>
+					</items>
+				</Select>
+				<DateRangeSelection id="turnoverDateRangeSelection" change="onChangeTurnoverDateRange" dateValue="{customDateRangeModel>/TurnoverDateFrom}"
+					secondDateValue="{customDateRangeModel>/TurnoverDateTo}" width="20em">
+					<layoutData><OverflowToolbarLayoutData id="turnoverDateRangeOtb" minWidth="20%" maxWidth="40%" shrinkable="true" group="1"/></layoutData>
+				</DateRangeSelection>
+				<Panel id="postedTurnoversSettingsPanel">
+					<FlexBox id="postedTurnoversSettingsFb" alignItems="Start" justifyContent="End">
+						<items><Button id="postedTurnoversSettingsBtn" icon="sap-icon://action-settings" press="onTurnoverSettingsPressed" tooltip="{i18n>xtol.settings}"/></items>
+					</FlexBox>
+				</Panel>
+				<ToolbarSpacer id="tableTurnoverToolbarSpacer"/>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column id="tableTurnoverValueDateColumn" hAlign="End" width="8rem">
+				<Label id="tableTurnoverValueDateLabel" text="{i18n>xfld.valueDate}"/>
+			</Column>
+			<Column id="tableTurnoverDescriptionColumn" hAlign="Begin">
+				<Label id="tableTurnoverDescriptionLabel" text="{i18n>xfld.description}"/>
+			</Column>
+			<Column demandPopin="true" id="tableTurnoverDueDateColumn" minScreenWidth="XXLarge" hAlign="End">
+				<Label id="tableTurnoverDueDateLabel" text="{i18n>xfld.dueDate}"/>
+			</Column>
+			<Column demandPopin="true" id="tableTurnoverPaymentDateColumn" minScreenWidth="XXLarge" hAlign="End">
+				<Label id="tableTurnoverPaymentDateLabel" text="{i18n>xfld.paymentDate}"/>
+			</Column>
+			<Column demandPopin="true" id="tableTurnoverStatusColumn" minScreenWidth="XLarge" hAlign="Center">
+				<Label id="tableTurnoverStatusLabel" text="{i18n>xfld.status}"/>
+			</Column>
+			<Column demandPopin="true" id="tableTurnoverBillingDocNoColumn" hAlign="Begin" minScreenWidth="XLarge" width="10rem">
+				<Label id="tableTurnoverBillingDocNoLabel" text="{i18n>xfld.billingDocuNo}"/>
+			</Column>
+			<Column hAlign="End" id="tableTurnoverDebitAmtColumn">
+				<Label id="tableTurnoverDebitAmtLabel" text="{i18n>xfld.debitAmt}"/>
+			</Column>
+			<Column hAlign="End" id="tableTurnoverCreditAmtColumn" >
+				<Label id="tableTurnoverCreditAmtLabel" text="{i18n>xfld.creditAmt}"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem detailPress="turnoverTblColumnListItem" id="tableTurnoverColItem" vAlign="Middle">
+				<cells>
+					<ObjectIdentifier id="tableTurnoverObjIdentifier" ariaLabelledBy="tableTurnoverValueDateLabel"
+						title="{path: 'ValueDate', type: 'sap.ui.model.type.Date'}"/>
+					<Text id="tableTurnoverDescription" text="{BankAccountBalanceTypeName}"/>
+					<Text id="tableTurnoverDueDate" text="{path :'DueDate' , type: 'sap.ui.model.type.Date'}"/>
+					<Text id="tableTurnoverPaymentDate" text="{path :'PaymentDate' , type: 'sap.ui.model.type.Date'}"/>
+					<Text id="tableTurnoverStatus" text="{Status}"/>
+					<Text id="tableTurnoverBillingDocNo" text="{BankAccountBillingItemID}"/>
+					<Text id="tableTurnoverDebitAmt"
+						text="{parts: [{path:'DebitAmount/Content'}, {path:'DebitAmount/Currency'}], formatter: '.formatter.formatAmountText'}"/>
+					<Text id="tableTurnoverCreditAmt"
+						text="{parts: [{path:'CreditAmount/Content'}, {path:'CreditAmount/Currency'}], formatter: '.formatter.formatAmountText'}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</mvc:View>

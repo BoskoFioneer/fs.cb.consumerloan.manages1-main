@@ -1,0 +1,16 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:m="sap.m" xmlns:semantic="sap.m.semantic" xmlns="sap.uxap">
+	<!-- Extends the ObjectHeader fragment -->
+	<core:ExtensionPoint name="ExtObjectHeader">
+		<ObjectPageHeader id="ObjectPageHeader" objectTitle="{BkAcctIdfgElmnts/ID}"
+		isObjectSubtitleAlwaysVisible="false">
+			<actions>
+				<ObjectPageHeaderActionButton hideText="false" id="buttonPayoff" press="onManagePayoff" text="{i18n>xbut.Manage_payoff}"
+					visible="{= !${mainview>/isEditPage} &amp;&amp; ${mainview>/isNavigationSupported}}"/>
+				<ObjectPageHeaderActionButton hideText="false" id="buttonDisburse" press="onManageDisbursement" text="{i18n>xbut.disbursement_orders}"
+					visible="{= !${mainview>/isEditPage} &amp;&amp; ${mainview>/isNavigationSupported}}"/>
+				<ObjectPageHeaderActionButton hideText="false" id="buttonFurther" press="onOpenFurther" text="{i18n>xbut.open_further}"
+					visible="{= !${mainview>/isEditPage} &amp;&amp; ${mainview>/isNavigationSupported}}"/>
+			</actions>
+		</ObjectPageHeader>
+	</core:ExtensionPoint>
+</core:FragmentDefinition>

@@ -1,0 +1,16 @@
+[{
+	"InternalID": "TD4",
+	"BusinessSystemID": "F6D_100",
+	"UUID": "8CDCD4B1-A21C-1ED5-B481-82A8DB2DBA2C",
+	"CategoryCode": "1",
+	"BusinessPartnerFormattedName": "Eckehart Fleck",
+	"CustomGroupCode": "0008",
+	"CustomGroupName": "Natural Person: Valuable Customer",
+	"PersonBirthPlaceName": "Frankfurt",
+	"PersonBirthDate": "/Date(954873000000)/",
+	"TelephoneDefaultFrmtdNoDesc": "+49 (221) 77777",
+	"EMailDefaultURI": "Eckehart.Fleck@aol.com",
+	"DefaultCreditRatingCode": "1A",
+	"DefaultCreditRatingName": "Very Good",
+	"FormattedDefaultAddressDesc": "Eckehart Fleck / Main Street 22 / 50829 Cologne"
+}]

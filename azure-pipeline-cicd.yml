@@ -1,0 +1,58 @@
+trigger:
+  branches:
+    include:
+      - main
+      - s4ce-*
+      - s4op-*
+      - fix-*
+      - feature-*
+      - cfdFeature-*
+      - infinity
+      - rel-*
+      - master
+      - mktop*
+      - soh-*
+      - UICB4H-*
+    exclude:
+      - config/services
+  batch: true
+  paths:
+    include:
+    - "*"
+pr:
+  branches:
+    include:
+      - main
+      - s4ce-*
+      - s4op-*
+      - fix-*
+      - feature-*
+      - cfdFeature-*
+      - infinity
+      - rel-*
+      - master
+      - mktop*
+      - soh-*
+      - UICB4H-*
+    exclude:
+      - config/services
+parameters:
+  - name: executionMode
+    displayName: Execution Mode
+    type: string
+    default: ci
+    values:
+      - ci
+      - quality
+      - translationdownload
+resources:
+  repositories:
+    - repository: fiori-pipeline-azure
+      endpoint: github.tools.sap
+      type: githubenterprise
+      name: FIORI-PIPELINE/fiori-pipeline-azure
+extends:
+  template: fiori-pipeline.yml@fiori-pipeline-azure
+  parameters:
+    executionMode: ${{ parameters.executionMode }}
+    pool: nons4-fiori

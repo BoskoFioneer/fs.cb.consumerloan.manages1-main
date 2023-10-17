@@ -1,0 +1,60 @@
+<!-- This nested view is used for Reference Accounts details for display -->
+<mvc:View controllerName="fs.cb.consumerloan.manages1.controller.RefAccounts" width="auto" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<Table busyIndicatorDelay="{tableView>/tableBusyDelay}" delete="handleRefAccountDelete" enableBusyIndicator="true" id="tableRefAccounts"
+		inset="false" 	items="{path: 'refaccounts>/CounterParties'}" noDataText="{tableView>/tableNoDataText}" updateFinished="onRefAccTableUpdateFinished" width="auto">
+		<!-- TODO open ticket filter does not work for last item -> workaround set item to visible = false -->
+		<!--items="{path: 'refaccounts>/CounterParties', filters:[{path: '_bDeleted', operator: 'EQ', value1: false }]}"-->
+		<headerToolbar id="tableRefAccountsHeaderToolbar">
+			<Toolbar id="tableRefAccountsToolbar" visible="false">
+				<Title id="tableRefAccountsTitle" text="{tableView>/tableTitle}" visible="false"/>
+				<ToolbarSpacer id="tableRefAccountsToolbarSpacer"></ToolbarSpacer>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column id="tableRefAccountsTypeColumn" width="6em">
+				<Label id="tableRefAccountsTypeLabel" text="{i18n>xfld.accountType}"/>
+			</Column>
+			<Column id="tableRefAccountsAccountColumn" width="24em">
+				<Label id="tableRefAccountsAccountLabel" text="{i18n>xfld.accountNumber}"/>
+			</Column>
+			<Column demandPopin="true" id="tableRefAccountsBankKeyColumn" minScreenWidth="XXLarge" width="10em">
+				<Label id="tableRefAccountsBankKeyLabel" text="{i18n>xfld.routingIDorBIC}"/>
+			</Column>
+			<Column demandPopin="true" id="tableRefAccountsBankNameColumn" minScreenWidth="XXLarge" width="10em">
+				<Label id="tableRefAccountsBankNameLabel" text="{i18n>xfld.bankName}"/>
+			</Column>
+			<Column demandPopin="true" id="tableRefAccountsHolderColumn" minScreenWidth="XXLarge" width="10em">
+				<Label id="tableRefAccountsHolderLabel" text="{i18n>xfld.accountHolder}"/>
+			</Column>
+			<Column id="tableRefAccountsMandateColumn" width="8em">
+				<Label id="tableRefAccountsMandateLabel" text="{i18n>xfld.accountMandate}"/>
+			</Column>
+			<Column demandPopin="true" hAlign="Center" id="tableRefAccountsClosureColumn" minScreenWidth="Medium" width="6em">
+				<Label id="tableRefAccountsClosureLabel" text="{i18n>xfld.accntBilling}"/>
+			</Column>
+			<Column demandPopin="true" hAlign="Center" id="tableRefAccountsInterestColumn" minScreenWidth="XLarge" width = "10em">
+				<Label id="tableRefAccountsInterestLabel" text="{i18n>xfld.accntDisbursement}"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem  id="tableRefAccountsItem" vAlign="Middle">
+				<cells>
+					<ObjectIdentifier id="tableRefAccountsObjIdentifier" ariaLabelledBy="tableRefAccountsTypeLabel" title="{refaccounts>TypeName}"/>
+					<Text id="tableRefAccountsAccount"
+						text="{= ${refaccounts>CounterPartyBankAccount/StandardID} !== '' &amp;&amp; ${refaccounts>CounterPartyBankAccount/BkStandardID} !== '' ? ${refaccounts>CounterPartyBankAccount/StandardID} : ${refaccounts>CounterPartyBankAccount/ID}}"/>
+					<Text id="tableRefAccountsBankKey"
+						text="{= ${refaccounts>CounterPartyBankAccount/StandardID} !== '' &amp;&amp; ${refaccounts>CounterPartyBankAccount/BkStandardID} !== '' ? ${refaccounts>CounterPartyBankAccount/BkStandardID} : ${refaccounts>CounterPartyBankAccount/BkRoutingID}}"/>
+					<Text id="tableRefAccountsBankName" text="{path:'refaccounts>CounterPartyBankAccount/BkName'}"/>
+					<Text id="tableRefAccountsAccountHolder" text="{path:'refaccounts>CounterPartyBankAccount/HolderName'}"/>
+					<Link id="tableRefAccountsMandateID" ariaLabelledBy="tableRefAccountsMandateLabel" text="{path:'refaccounts>DirectDebitMandate/ID'}"
+						press="onDirectDebitMandateLinkPressed"/>
+					<CheckBox ariaLabelledBy="tableRefAccountsInterestLabel" editable="false" id="tableRefAccountsBillingIndicator"
+						selected="{refaccounts>BillingUseIndicator}"/>
+					<CheckBox ariaLabelledBy="tableRefAccountsDisbursementLabel" editable="false" id="tableRefAccountsDisbursementIndicator"
+						selected="{refaccounts>DisbursementUseIndicator}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</mvc:View>

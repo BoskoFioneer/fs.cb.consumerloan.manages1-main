@@ -1,0 +1,6 @@
+<!-- This message page is shown when the user has not entered anything yet. -->
+<!-- Because there is no interaction on the page, no controller is needed -->
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<MessagePage description="" id="startPage" showHeader="false"
+		text="{i18n>ymsg.initialMessage}" title="{i18n>xtit.appTitle}"></MessagePage>
+</mvc:View>

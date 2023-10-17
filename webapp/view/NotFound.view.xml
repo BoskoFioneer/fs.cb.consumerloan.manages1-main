@@ -1,0 +1,7 @@
+<mvc:View controllerName="fs.cb.consumerloan.manages1.controller.NotFound" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<MessagePage showHeader="false" text="{i18n>noObjectFoundText}" icon="{sap-icon://product}" description="" id="page">
+		<customDescription>
+			<Link id="link" text="{i18n>backToWorklist}" press="onLinkPressed"/>
+		</customDescription>
+	</MessagePage>
+</mvc:View>

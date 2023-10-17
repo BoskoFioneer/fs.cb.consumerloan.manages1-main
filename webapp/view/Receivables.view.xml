@@ -1,0 +1,69 @@
+<!-- This nested view is used for Receivables details for display -->
+<mvc:View controllerName="fs.cb.consumerloan.manages1.controller.Receivables" width="auto" xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Table id="tableReceivables" busyIndicatorDelay="{tableView>/tableBusyDelay}" enableBusyIndicator="true" inset="false"
+		noDataText=" {tableView>/tableNoDataText}" updateFinished="onUpdateFinished" width="auto">
+		<headerToolbar id="tableReceivablesHeaderToolbar">
+			<Toolbar id="tableReceivablesToolbar" visible="true">
+				<Title id="tableReceivablesTitle" text="{tableView>/tableTitle}" visible="false"/>
+				<Select id="oReceivablesTblDateSelect" selectedKey="thisQuarter" ariaLabelledBy="oReceivablesTblDurationText"
+					change="onChangeReceivablesDateSelect">
+					<items>
+						<core:Item id="oReceivablesTblDurationUserSpecPeriod" key="dateRange" text="{i18n>xlst.dateRange}"/>
+						<core:Item id="oReceivablesTblDurationOneMonth" key="thisMonth" text="{i18n>xlst.thisMonth}"/>
+						<core:Item id="oReceivablesTblDurationQuarter" key="thisQuarter" text="{i18n>xlst.thisQuarter}"/>
+						<core:Item id="oReceivablesTblDurationYear" key="thisYear" text="{i18n>xlst.thisYear}"/>
+						<core:Item id="oReceivablesTblDurationAll" key="all" text="{i18n>xlst.all}"/>
+					</items>
+				</Select>
+				<DateRangeSelection id="oReceivablesTblDateRangeSelection" dateValue="{customDateRangeModel>/OpenItemsDateFrom}"
+					secondDateValue="{customDateRangeModel>/OpenItemsDateTo}" change="onChangeReceivablesDateRange" width="20em" editable="false">
+					<layoutData><OverflowToolbarLayoutData id="dateRangeSelectionOtb" minWidth="20%" maxWidth="40%" shrinkable="true" group="1"/></layoutData>
+				</DateRangeSelection>
+				<Panel id="oReceivablesSettingsPanel">
+					<FlexBox id="oReceivablesSettingsFb" alignItems="Start" justifyContent="End">
+						<items>
+							<Button id="oReceivablesTblSettingsBtn" icon="sap-icon://action-settings" press="onReceivablesSettingsPressed"
+								tooltip="{i18n>xtol.settings}"></Button>
+						</items>
+					</FlexBox>
+				</Panel>
+				<ToolbarSpacer id="tableReceivablesToolbarSpacer"></ToolbarSpacer>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column id="tableReceivablesBilligIdColumn" >
+				<Label id="tableReceivablesBilligIdLabel" text="{i18n>xfld.billingItem}"/>
+			</Column>
+			<Column id="tableReceivablesClearingStatusColumn" hAlign="Left"  >
+				<Label id="tableReceivablesClearingStatusLabel" text="{i18n>xfld.clearingStatus}"/>
+			</Column>
+			<Column id="tableReceivablesTypeNameColumn" hAlign="Left" >
+				<Label id="tableReceivableTypeNameLabel" text="{i18n>xfld.recvType}"/>
+			</Column>
+			<Column demandPopin="true" id="tableReceivablesDueDateColumn" hAlign="Right" minScreenWidth="XLarge">
+				<Label id="tableReceivablesDueDateLabel" text="{i18n>xfld.paymDueDate}" />
+			</Column>
+			<Column demandPopin="true" id="tableReceivablesDueAmountColumn" hAlign="Right" minScreenWidth="XLarge" >
+				<Label id="tableReceivablesDueAmountLabel" text="{i18n>xfld.outstandingAmount}" />
+			</Column>
+			<!--<Column demandPopin="true" popinDisplay="WithoutHeader" id="tableReceivablesMoreDetColumn" minScreenWidth="tablet">-->
+			<!--	<Label id="tableReceivablesMoreDetLabel" text=""/>-->
+			<!--</Column>-->
+		</columns>
+		<items>
+			<ColumnListItem id="tableReceivablesColItem" vAlign="Middle">
+				<cells>
+					<ObjectIdentifier id="tableReceivablesObjIdentifier" titleActive="true" titlePress="onPaymentItemMoreDetails"
+						ariaLabelledBy="tableReceivablesBilligIdLabel" title="{path:'Id'}"/>
+					<ObjectStatus id="tableReceivablesClearingStatus"
+						text="{parts:[{path:'DirectDebitCollectionInitiatedIndicator'}], formatter:'.formatter.getClearingStatus'}"/>
+					<Text id="tableReceivablesTypeName" text="{Typename}"/>
+					<Text id="tableReceivablesDueDate" text="{path :'WrkngDayAdjstdBllAmntPymntDue' , type: 'sap.ui.model.type.Date'}"/>
+					<Text id="tableReceivablesDueAmt"
+						text="{parts: [{path:'OutstandingAmount/Content'}, {path:'OutstandingAmount/CurrencyCode'}], formatter: '.formatter.formatAmountText'}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</mvc:View>

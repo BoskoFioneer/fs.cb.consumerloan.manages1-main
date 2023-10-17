@@ -1,0 +1,289 @@
+{
+    "_version": "1.5.0",
+    "sap.app": {
+        "id": "fs.cb.consumerloan.manages1",
+        "type": "application",
+        "resources": "resources.json",
+        "i18n": "i18n/i18n.properties",
+        "title": "{{xtit.appTitle}}",
+        "subTitle": "{{xtit.appSubTitle}}",
+        "description": "{{ydes.appDescription}}",
+        "applicationVersion": {
+            "version": "${project.version}"
+        },
+        "ach": "FS-XA-LNS-UI",
+        "dataSources": {
+            "CONSUMERLOANMAINTENANCE_SRV": {
+                "uri": "/sap/opu/odata/sap/CONSUMERLOANMAINTENANCE_SRV/",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "2.0",
+                    "localUri": "localService/consumerloanmaintenance_srv/metadata.xml"
+                }
+            },
+            "LNS_FINANCIAL_TURNOVER_V2_SRV": {
+                "uri": "/sap/opu/odata/sap/LNS_FINANCIAL_TURNOVER_V2_SRV/",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "2.0",
+                    "localUri": "localService/lns_financial_turnover_v2_srv/metadata.xml"
+                }
+            }
+        },
+        "sourceTemplate": {
+            "id": "sap.ui.ui5-template-plugin.1worklist",
+            "version": "1.32.5",
+            "toolsId": "d88289b5-2c79-44e2-ad30-0f764abef25e"
+        },
+        "crossNavigation": {
+            "inbounds": {
+                "consumerLoanManage": {
+                    "semanticObject": "ConsumerLoan",
+                    "action": "manage",
+                    "title": "{{xtit.appTitle}}",
+                    "subTitle": "{{xtit.appSubTitle}}",
+                    "signature": {
+                        "parameters": {
+                            "sap-xapp-state": {
+                                "required": false
+                            }
+                        },
+                        "additionalParameters": "ignored"
+                    }
+                }
+            },
+            "outbounds": {
+                "bankAccountContractDisplayMoreDetails": {
+                    "semanticObject": "BankAccountContract",
+                    "action": "displayMoreDetails",
+                    "parameters": {
+                        "BkCountryCode": {},
+                        "BkRoutingID": {},
+                        "ID": {}
+                    }
+                },
+                "bankCustomerDisplay": {
+                    "semanticObject": "BankCustomer",
+                    "action": "display",
+                    "parameters": {
+                        "CustomerUUID": {},
+                        "BusinessSystemID": {}
+                    }
+                },
+                "manageLoanPayoffs": {
+                    "semanticObject": "LoanPayoff",
+                    "action": "manage",
+                    "parameters": {
+                        "BkAcctInternalID": {
+                            "required": true
+                        },
+                        "sap-xapp-state": {
+                            "required": false
+                        }
+                    }
+                },
+                "manageLoanDisbursements": {
+                    "semanticObject": "LoanDisbursement",
+                    "action": "manage",
+                    "parameters": {
+                        "BkAcctInternalID": {
+                            "required": true
+                        },
+                        "sap-xapp-state": {
+                            "required": false
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sap.fiori": {
+        "registrationIds": [
+            "F2724A"
+        ],
+        "archeType": "transactional"
+    },
+    "sap.platform.abap": {
+        "uri": "/sap/bc/ui5_ui5/sap/fs_lns_clm"
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "sap-icon://task",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        },
+        "supportedThemes": [
+            "sap_hcb",
+            "sap_belize",
+            "sap_fiori_3"
+        ],
+        "fullWidth": true
+    },
+    "sap.ui5": {
+        "services": {
+            "ShellUIService": {
+                "lazy": false,
+                "factoryName": "sap.ushell.ui5service.ShellUIService",
+                "settings": {
+                    "setHierarchy": "auto",
+                    "setTitle": "auto"
+                }
+            }
+        },
+        "config": {
+            "sapFiori2Adaptation": true
+        },
+        "componentName": "fs.cb.consumerloan.manages1",
+        "autoPrefixId": true,
+        "rootView": {
+            "viewName": "fs.cb.consumerloan.manages1.view.App",
+            "type": "XML",
+            "id": "app"
+        },
+        "dependencies": {
+            "minUI5Version": "${sap.ui5.dist.version}",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {},
+                "sap.ui.comp": {
+                    "lazy": true
+                },
+                "sap.ui.unified": {
+                    "lazy": true
+                },
+                "sap.uxap": {
+                    "lazy": true
+                },
+                "sap.ui.layout": {
+                    "lazy": true
+                },
+                "sap.viz": {
+                    "lazy": true
+                },
+                "sap.suite.ui.commons": {
+                    "lazy": true
+                },
+                "sap.fs.cb.lib.commons1": {
+                    "lazy": false
+                },
+                "sap.f": {
+                    "lazy": true
+                }
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "fs.cb.consumerloan.manages1.i18n.i18n"
+                }
+            },
+            "": {
+                "dataSource": "CONSUMERLOANMAINTENANCE_SRV",
+                "settings": {
+                    "metadataUrlParams": {
+                        "sap-documentation": "heading,quickinfo",
+                        "sap-value-list": "none"
+                    },
+                    "defaultBindingMode": "TwoWay",
+                    "defaultCountMode": "None"
+                },
+                "preload": false
+            },
+            "CashflowModel": {
+                "dataSource": "LNS_FINANCIAL_TURNOVER_V2_SRV",
+                "settings": {
+                    "metadataUrlParams": {
+                        "sap-documentation": "heading,quickinfo",
+                        "sap-value-list": "none"
+                    },
+                    "defaultBindingMode": "TwoWay",
+                    "defaultCountMode": "None"
+                },
+                "preload": false
+            }
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "fs.cb.consumerloan.manages1.view",
+                "controlId": "app",
+                "controlAggregation": "pages",
+                "bypassed": {
+                    "target": [
+                        "mainPage",
+                        "notFound"
+                    ]
+                },
+                "async": true
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "start",
+                    "target": [
+                        "mainPage",
+                        "start"
+                    ]
+                },
+                {
+                    "pattern": "Account(sap-iapp-state={iAppState},BkAcctInternalID={sBkAcctInternalID})",
+                    "name": "displayAccountWithAppState",
+                    "target": [
+                        "mainPage",
+                        "displayAccount"
+                    ]
+                }
+            ],
+            "targets": {
+                "mainPage": {
+                    "viewName": "MainPage",
+                    "viewId": "mainPage"
+                },
+                "start": {
+                    "controlId": "objectPageContainer",
+                    "controlAggregation": "pages",
+                    "viewName": "Start",
+                    "viewId": "start",
+                    "parent": "mainPage"
+                },
+                "displayAccount": {
+                    "controlId": "objectPageContainer",
+                    "controlAggregation": "pages",
+                    "viewName": "Account",
+                    "viewId": "account",
+                    "parent": "mainPage",
+                    "transition": "show"
+                },
+                "notFound": {
+                    "controlId": "objectPageContainer",
+                    "controlAggregation": "pages",
+                    "viewName": "ObjectNotFound",
+                    "viewId": "objectNotFound",
+                    "parent": "mainPage"
+                },
+                "error": {
+                    "controlId": "objectPageContainer",
+                    "controlAggregation": "pages",
+                    "viewName": "ErrorPage",
+                    "viewId": "errorPage",
+                    "parent": "mainPage"
+                }
+            }
+        }
+    }
+}

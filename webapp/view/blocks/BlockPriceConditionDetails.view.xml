@@ -1,0 +1,33 @@
+<!-- This view  is used as nested view and is containing the limit data in display mode -->
+<mvc:View controllerName="fs.cb.consumerloan.manages1.controller.PriceConditions" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+	<Table id="tablepriceconditions" inset="false" width="auto" noDataText="{i18n>ymsg.priceConditionsTableNoDataText}"
+		updateFinished="onUpdateFinished" enableBusyIndicator="false">
+		<headerToolbar>
+			<Toolbar id="priceCondTb">
+				<Title id="priceCondTitle" text="{i18n>xtit.priceConditions}" level="H2"></Title>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column id="tablePriceConditionsConditionColumn" hAlign="Left" width="20em">
+				<Label id="tablePriceConditionsConditionLabel" text="{i18n>xfld.condition}"/>
+			</Column>
+			<Column id="tablePriceconditionsValueColumn" hAlign="Right">
+				<Label id="tablePriceConditionsValueLabel" text="{i18n>xfld.value}"/>
+			</Column>
+			<Column id="tablePriceConditionsIndividualisedColumn" hAlign="Center">
+				<Label id="tablePriceConditionsIndividualisedLabel" text="{i18n>xfld.individualised}"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem id="tablePriceConditionsItem">
+				<cells>
+					<ObjectIdentifier id="PriceConditionConditions" ariaLabelledBy="tablePriceConditionsConditionLabel" title="{path: 'BkContrFinCndnTypeName'}"/>
+					<Text id="PriceConditionPricevalue" text="{path:'PriceText'}"/>
+					<CheckBox id="PriceConditionIndividualized" ariaLabelledBy="tablePriceConditionsIndividualizedLabel" editable="false"
+						selected="{IndividualIndicator}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</mvc:View>

@@ -1,0 +1,14 @@
+[{
+	"ID": "50002196",
+	"BusinessSystemID": "F6D_100",
+	"Description": "90WP",
+	"TelephoneDefaultFrmtdNoDesc": "06227 7 47474",
+	"EMailDefaultURI": "firma.sap@sap.com"
+},
+{
+	"ID": "50000607",
+	"BusinessSystemID": "F6D_100",
+	"Description": "MockData",
+	"TelephoneDefaultFrmtdNoDesc": "06227 7 47474",
+	"EMailDefaultURI": "mockData.sap@sap.com"
+}]

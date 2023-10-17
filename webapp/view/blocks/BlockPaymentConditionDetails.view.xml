@@ -1,0 +1,33 @@
+<mvc:View controllerName="fs.cb.consumerloan.manages1.controller.PaymentConditions" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+	<Table id="tablepaymentconditions" inset="false" noDataText="{i18n>ymsg.paymentConditionsTableNoDataText}" updateFinished="onUpdateFinished"
+		width="auto" enableBusyIndicator="false">
+		<headerToolbar>
+			<Toolbar id="paymntCondTb">
+				<Title id="paymntCondTitle" text="{i18n>xtit.paymentConditions}" level="H2"></Title>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column id="tablePaymentConditionsConditionColumn" hAlign="Left" width="20em">
+				<Label id="tablePaymentConditionsConditionLabel" text="{i18n>xfld.condition}"/>
+			</Column>
+			<Column id="tablePaymentConditionsValueColumn" hAlign="Right">
+				<Label id="tablePaymentConditionsValueLabel" text="{i18n>xfld.value}"/>
+			</Column>
+			<Column id="tablePaymentConditionsIndividualizedColumn" hAlign="Center">
+				<Label id="tablePaymentConditionsIndividualizedLabel" text="{i18n>xfld.individualised}"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem id="tablePaymentConditionsItem">
+				<cells>
+					<ObjectIdentifier id="PaymentConditionConditions" ariaLabelledBy="tablePaymentConditionsConditionLabel"
+						title="{path: 'BkContrFinCndnTypeName'}"/>
+					<Text id="PaymentConditionsValue" text="{path:'PaymentText'}"/>
+					<CheckBox ariaLabelledBy="tablePaymentConditionsIndividualizedLabel" id="PaymentConditionsindividualized" editable="false"
+						selected="{IndividualIndicator}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</mvc:View>

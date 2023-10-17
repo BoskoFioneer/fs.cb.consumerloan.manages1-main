@@ -1,0 +1,90 @@
+<!-- This view is containing the object page layout  -->
+<mvc:View controllerName="fs.cb.consumerloan.manages1.controller.Account" xmlns:blocks="fs.cb.consumerloan.manages1.view.blocks"
+	xmlns:core="sap.ui.core" xmlns="sap.uxap" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m">
+	<ObjectPageLayout enableLazyLoading="true" id="accountLayout" upperCaseAnchorBar="false">
+		<headerTitle id="accountObjHeaderTitle">
+			<core:Fragment fragmentName="fs.cb.consumerloan.manages1.view.fragment.ObjectHeader" id="fragmentObjectHeaderTitle" type="XML"/>
+		</headerTitle>
+		<headerContent id="accountObjHeaderContent">
+			<mvc:XMLView id="accountObjtHeaderView" viewName="fs.cb.consumerloan.manages1.view.ObjectHeaderContent"/>
+		</headerContent>
+		<sections>
+			<ObjectPageSection id="balKeySection" title="{i18n>xtit.balanceKeyFigure_section}" titleUppercase="false">
+				<subSections>
+					<ObjectPageSubSection id="balKeySubSection">
+						<blocks>
+							<mvc:XMLView id="balKeyBlock" viewName="fs.cb.consumerloan.manages1.view.BalanceKeyFigures"/>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection id="agreementsSection" title="{i18n>xtit.agreements_section}" titleUppercase="false">
+				<subSections>
+					<ObjectPageSubSection id="agreementPeriodSubSection" title="{i18n>xtit.agreementPeriod_sub_section}">
+						<blocks>
+							<mvc:XMLView id="agreementPeriodBlock" viewName="fs.cb.consumerloan.manages1.view.AgreementPeriod"/>
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection id="conditionFixingAgreementSubSection" title="{i18n>xtit.conditionFixingAgreement_sub_section}" mode="Collapsed">
+						<blocks>
+							<mvc:XMLView id="conditionFixingAgreementBlock" viewName="fs.cb.consumerloan.manages1.view.ConditionFixingAgreement"/>
+						</blocks>
+						<moreBlocks>
+							<blocks:BlockPriceConditionDetails id="blockPriceConditionDetails" columnLayout="4"/>
+						</moreBlocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection id="inpaymentAgreementSubSection" mode="Collapsed" title="{i18n>xtit.inpaymentAgreement_sub_section}">
+						<blocks>
+							<mvc:XMLView id="inpaymentAgreementBlock" viewName="fs.cb.consumerloan.manages1.view.InpaymentAgreement"/>
+						</blocks>
+						<moreBlocks>
+							<blocks:BlockPaymentConditionDetails id="blockPaymentConditionDetails" columnLayout="4"/>
+						</moreBlocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection id="refAccSection" title="{i18n>xtit.refAccounts_section}" titleUppercase="false">
+				<subSections>
+					<ObjectPageSubSection id="refAccSubSection">
+						<blocks>
+							<!--<ObjectPageLazyLoader id="refAccountsLazyLoder" stashed="true">-->
+								<mvc:XMLView id="refAccBlock" viewName="fs.cb.consumerloan.manages1.view.RefAccounts"/>
+							<!--</ObjectPageLazyLoader>-->
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection id="oReceivablesTblSection" title="{i18n>xtit.oReceivablesTbl_section}" titleUppercase="false">
+				<subSections>
+					<ObjectPageSubSection id="oReceivablesTblSubSection" mode="Expanded">
+						<blocks>
+							<ObjectPageLazyLoader id="oReceivablesTblLazyLoder" stashed="true">
+								<mvc:XMLView id="oReceivablesTblBlock" viewName="fs.cb.consumerloan.manages1.view.Receivables"/>
+							</ObjectPageLazyLoader>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection id="CashflowSection" title="{i18n>xtit.cashflow_section}" titleUppercase="false">
+				<subSections>
+					<ObjectPageSubSection id="TurnoverSubSection" title="{i18n>xtit.turnover_sub_section}">
+						<blocks>
+							<ObjectPageLazyLoader id="turnoverLazyLoder" stashed="true">
+								<mvc:XMLView id="turnoverBlock" viewName="fs.cb.consumerloan.manages1.view.Turnover"/>
+							</ObjectPageLazyLoader>
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection id="PaymentPlanSubSection" title="{i18n>xtit.paymentPlan_sub_section}">
+						<blocks>
+							<ObjectPageLazyLoader id="paymentPlanLazyLoder" stashed="true">
+								<mvc:XMLView id="paymentPlanBlock" viewName="fs.cb.consumerloan.manages1.view.PaymentPlan"/>
+							</ObjectPageLazyLoader>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+				<!--Extends the AccountPage Section, use to add new anchors-->
+			<core:ExtensionPoint name="ExtAccountPageSection"></core:ExtensionPoint>
+		</sections>
+	</ObjectPageLayout>
+</mvc:View>

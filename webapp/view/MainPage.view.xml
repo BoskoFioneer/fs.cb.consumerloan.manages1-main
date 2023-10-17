@@ -1,0 +1,19 @@
+<!-- This message page is main page containing the navigation containers to display object page or message page -->
+<mvc:View controllerName="fs.cb.consumerloan.manages1.controller.MainPage" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout"
+	xmlns:footerbar="sap.ushell.ui.footerbar" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns="sap.m" xmlns:f="sap.f">
+	<f:DynamicPage busy="{mainview>/busy}" busyIndicatorDelay="{mainview>/delay}" enableScrolling="false" id="mainPage"
+		navButtonPress="onNavBack" class="sapUiNoContentPadding" showFooter="false" showNavButton="true"
+		title="{i18n>xtit.appTitle}">
+		<f:header id="mainPageHeader">
+			<f:DynamicPageHeader id="mainPageDynamicHeader" pinnable="false">
+				<f:content>
+					<mvc:XMLView id="searchView" viewName="fs.cb.consumerloan.manages1.view.Search" displayBlock="true"/>
+				</f:content>
+			</f:DynamicPageHeader>
+		</f:header>
+		<f:content class="sapUiNoContentPadding">
+			<!-- Nav Container for Object Page - content set via router -->
+			<NavContainer busy="{mainview>/busy}" height="100%" id="objectPageContainer"/>
+		</f:content>
+	</f:DynamicPage>
+</mvc:View>

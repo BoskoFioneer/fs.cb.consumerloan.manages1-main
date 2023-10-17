@@ -1,0 +1,68 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:forms="sap.ui.layout.form" xmlns="sap.m" xmlns:u="sap.ui.unified">
+	<!-- Extends the Balance key Figures Container fragment -->
+	<core:ExtensionPoint name="ExtBalanceKeyFigure">
+		<forms:FormContainer id="capitalAmountFormContainer" title="{i18n>xtit.capitalAmounts}">
+			<forms:formElements>
+				<forms:FormElement id="disbursedCapitalFormElement">
+					<forms:label>
+						<Label id="disbursedCapitalLabel" text="{i18n>xfld.disbursedCapital}" labelFor="disbursedCapitalField"></Label>
+					</forms:label>
+					<forms:fields>
+						<Text id="disbursedCapitalField"
+							text="{parts:[{path:'DsbursdCptlAmt/Content'}, {path:'DsbursdCptlAmt/CurrencyCode'}], formatter:'.formatter.formatAmountText'}"/>
+					</forms:fields>
+				</forms:FormElement>
+				<forms:FormElement id="contractCapitalFormElement">
+					<forms:label>
+						<Label id="contractCapitalLabel" text="{i18n>xfld.contractCapital}" labelFor="contractCapitalField"></Label>
+					</forms:label>
+					<forms:fields>
+						<Text id="contractCapitalField"
+							text="{parts:[ {path:'ContrctCptlAmt/Content'}, {path:'ContrctCptlAmt/CurrencyCode'} ], formatter:'.formatter.formatAmountText'}"/>
+					</forms:fields>
+				</forms:FormElement>
+			</forms:formElements>
+		</forms:FormContainer>
+		<forms:FormContainer id="interestChargeAmountFormContainer" title="{i18n>xtit.intAndCharges}">
+			<forms:formElements>
+				<forms:FormElement id="outstandingInterestFormElement">
+					<forms:label>
+						<Label id="outstandingInterestLabel" text="{i18n>xfld.outstandingInterest}" labelFor="outstandingInterestField"></Label>
+					</forms:label>
+					<forms:fields>
+						<Text id="outstandingInterestField"
+							text="{parts:[{path:'OtstndngIntrstAmt/Content'}, {path:'OtstndngIntrstAmt/CurrencyCode'}], formatter:'.formatter.formatAmountText'}"/>
+					</forms:fields>
+				</forms:FormElement>
+				<forms:FormElement id="outstandingChargesFormElement">
+					<forms:label>
+						<Label id="outstandingChargesLabel" text="{i18n>xfld.outstandingCharges}" labelFor="outstandingChargesField"></Label>
+					</forms:label>
+					<forms:fields>
+						<Text id="outstandingChargesField"
+							text="{parts:[ {path:'OtstndngChrgsAmt/Content'}, {path:'OtstndngChrgsAmt/CurrencyCode'} ], formatter:'.formatter.formatAmountText'}"/>
+					</forms:fields>
+				</forms:FormElement>
+				<forms:FormElement id="interestAccruedFormElement">
+					<forms:label>
+						<Label id="interestAccruedLabel" text="{i18n>xfld.interestAccrued}" labelFor="interestAccruedfield"></Label>
+					</forms:label>
+					<forms:fields>
+						<Text id="interestAccruedfield"
+							text="{parts:[ {path:'AccumultdCrdtIntrstAmt/Content'}, {path:'AccumultdCrdtIntrstAmt/CurrencyCode'} ], formatter:'.formatter.formatAmountText'}"/>
+					</forms:fields>
+				</forms:FormElement>
+				<forms:FormElement id="interestPaidFormElement">
+					<forms:label>
+						<Label id="interestPaidLabel" text="{i18n>xfld.interestPaid}" labelFor="interestPaidfield"></Label>
+					</forms:label>
+					<forms:fields>
+						<Text id="interestPaidfield"
+							text="{parts:[ {path:'SettledIntrst/Content'}, {path:'SettledIntrst/CurrencyCode'} ], formatter:'.formatter.formatAmountText'}"/>
+					</forms:fields>
+				</forms:FormElement>
+			</forms:formElements>
+			
+		</forms:FormContainer>
+	</core:ExtensionPoint>
+</core:FragmentDefinition>

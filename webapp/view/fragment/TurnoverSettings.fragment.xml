@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ViewSettingsDialog id="turnoverDialog" title="{i18n>xtit.sort_filter_by}" confirm="handleConfirm" cancel="handleTOCancel">
+		<sortItems>
+			<ViewSettingsItem id="dueDateSort" text="{i18n>xfld.dueDate}" key="DueDate" selected="false"/>
+			<ViewSettingsItem id="valueDateSort" text="{i18n>xfld.valueDate}" key="ValueDate" selected="false"/>
+			<ViewSettingsItem id="paymentDateSort" text="{i18n>xfld.paymentDate}" key="PaymentDate" selected="true"/>
+			<ViewSettingsItem id="statusSort" text="{i18n>xfld.status}" key="Status" selected="false"/>
+		</sortItems>
+		<filterItems>
+			<ViewSettingsFilterItem id="turnoverFilterStatus" text="{i18n>xfld.status}" multiSelect="true" key="Status"/>
+			<ViewSettingsFilterItem id="turnoverFilterDescription" text="{i18n>xfld.description}" multiSelect="true" key="BankAccountBalanceTypeName"/>
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

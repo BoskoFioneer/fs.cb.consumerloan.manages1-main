@@ -1,0 +1,72 @@
+[{
+	"CounterPartyBankAccount": {
+			"HolderName": "Musterbank",
+			"ID": "",
+			"StandardID": "DE83900000010000000001",
+			"BkStandardID": "HASPDEXXX",
+			"BkRoutingID": "",
+			"BkCountryCode": "",
+			"BkName": "SAP Bank"
+		},
+		"BkAcctContrID": "DE53904210810010030023",
+		"BkAcctContrIDSchmID": "BAC.001",
+		"BkAcctContrIDSchmAgcyID": "310",
+		"BusinessSystemID": "F6D_100",
+		"UUID": "8CDCD4B1-A21C-1ED5-B496-3D8C2B2B1A10",
+		"TypeCode": "3",
+		"TypeName": "SEPA",
+		"DirectDebitMandate": {
+			"ID": "LPM-BP",
+			"CreditorPartyID": "DE48ZZZ53003113525"
+		},
+		"DisbursementUseIndicator": true,
+		"BillingUseIndicator": true
+},
+{
+	"CounterPartyBankAccount": {
+			"HolderName": "Musterbank",
+			"ID": "0000000002",
+			"StandardID": "DE83900000010000000002",
+			"BkStandardID": "",
+			"BkRoutingID": "90000001",
+			"BkCountryCode": "",
+			"BkName": "SAP Bank"
+		},
+		"BkAcctContrID": "DE53904210810010030023",
+		"BkAcctContrIDSchmID": "BAC.001",
+		"BkAcctContrIDSchmAgcyID": "310",
+		"BusinessSystemID": "F6D_100",
+		"UUID": "8CDCD4B1-A21C-1ED5-B496-3D8C2B2B1A20",
+		"TypeCode": "1",
+		"TypeName": "Internal",
+		"DirectDebitMandate": {
+			"ID": "",
+			"CreditorPartyID": ""
+		},
+		"DisbursementUseIndicator": true,
+		"BillingUseIndicator": false
+},
+{
+	"CounterPartyBankAccount": {
+			"HolderName": "Musterbank",
+			"ID": "0000000002",
+			"StandardID": "DE83900000010000000002",
+			"BkStandardID": "",
+			"BkRoutingID": "90000001",
+			"BkCountryCode": "",
+			"BkName": "SAP Bank"
+		},
+		"BkAcctContrID": "DE53904210810010030024",
+		"BkAcctContrIDSchmID": "BAC.002",
+		"BkAcctContrIDSchmAgcyID": "311",
+		"BusinessSystemID": "FHD_100",
+		"UUID": "8CDCD4B1-A21C-1ED5-B496-3D8C2B2B1A20",
+		"TypeCode": "1",
+		"TypeName": "Internal",
+		"DirectDebitMandate": {
+			"ID": "",
+			"CreditorPartyID": ""
+		},
+		"DisbursementUseIndicator": true,
+		"BillingUseIndicator": false
+}]

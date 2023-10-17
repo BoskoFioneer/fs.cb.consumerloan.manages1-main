@@ -1,0 +1,47 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="test.integration.crossapp.controller.TestPage"
+	xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true">
+	<App id="testPageApp">
+		<pages>
+			<Page id="idTestPage" title="Test Page for Cross-App Navigation" class="sapUiFioriObjectPage">
+				<content>
+					<Panel id="idTestPanel1" headerText="Supported Start Parameters">
+						<content>
+							<l:VerticalLayout id="idTestLayout1" class="sapUiContentPadding" width="100%">
+								<l:content>
+									<Link id="link1" text="Navigate to app without parameters: #ConsumerLoan-manage" press="navigateToAppWithoutParamaters"/>
+									<Link id="link2" text="Navigate to app using internal id: #ConsumerLoan-manage?BkAcctInternalID=16A68B51D7301EE78DC88CDCD4B1A21C"
+										press="navigateToAppUsingInternalId"/>
+									<Link id="link3"
+										text="Navigate to app using internal id and sap-xapp-state: #ConsumerLoan-manage?BkAcctInternalID=9D503919F9841ED5B4968CDCD4B1A21C%26sap-xapp-state=AS334X48813Q7Q3PLU9M0D3Y6GK1ODRVHQ8U8Z6J"
+										press="navigateToAppUsingAppState"/>
+								</l:content>
+							</l:VerticalLayout>
+						</content>
+					</Panel>
+					<Panel id="idTestPanel2" headerText="Fallback: Not valid parameters">
+						<content>
+							<l:VerticalLayout id="idTestLayout2" class="sapUiContentPadding" width="100%">
+								<l:content>
+									<Link id="link4"
+										text="Navigate to app with non valid internal id as cross-app parameter -> Invalid internal ID specified, Requested Account Not Found page"
+										press="navigateToAppUsingWrongInternalId"/>
+									<Link id="link5"
+										text="Navigate to app with valid internal id but non valid sap-xapp-state key -> Invalid app-state key, Requested Account Not Found page"
+										press="navigateToAppUsingWrongAppStateKey"/>
+									<Link id="link6"
+										text="Navigate to app with valid internal id and with sap-xapp-state content containing not all parameters -> Not all required data is present in container, Requested Account Not Found page"
+										press="navigateToAppUsingWrongAppStateContent"/>
+									<Link id="link7" text="Navigate to app with non valid sap-xapp-state key and not valid internal id -> Requested Account Not Found page"
+										press="navigateToAppUsingWrongInternalIdAndAppState"/>
+									<Link id="link8"
+										text="Navigate to app with sap-xapp-state and without internal id -> Internal ID is mandatory with app-state, Technical error page displayed"
+										press="navigateToAppUsingAppStateWithoutInternalId"/>
+								</l:content>
+							</l:VerticalLayout>
+						</content>
+					</Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

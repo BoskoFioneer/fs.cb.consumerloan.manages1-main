@@ -1,0 +1,79 @@
+[{
+	"BkAcctContrID": "DE53904210810010030023",
+	"BkAcctContrIDSchmID": "BAC.001",
+	"BkAcctContrIDSchmAgcyID": "310",
+	"BusinessSystemID": "F6D_100",
+	"OrdinalNumberValue": 1,
+	"BkContrFinCndnTypeCode": "500110",
+	"BkContrFinCndnTypeName": "Nominal Int. Loans",
+	"PriceText": "5 %",
+	"IndividualIndicator": false
+},
+{
+	"BkAcctContrID": "DE53904210810010030023",
+	"BkAcctContrIDSchmID": "BAC.001",
+	"BkAcctContrIDSchmAgcyID": "310",
+	"BusinessSystemID": "F6D_100",
+	"OrdinalNumberValue": 2,
+	"BkContrFinCndnTypeCode": "500300",
+	"BkContrFinCndnTypeName": "Acct Maint. Charge Loans",
+	"PriceText": "5.00 EUR",
+	"IndividualIndicator": false
+},
+{
+	"BkAcctContrID": "DE53904210810010030023",
+	"BkAcctContrIDSchmID": "BAC.001",
+	"BkAcctContrIDSchmAgcyID": "310",
+	"BusinessSystemID": "F6D_100",
+	"OrdinalNumberValue": 3,
+	"BkContrFinCndnTypeCode": "500200",
+	"BkContrFinCndnTypeName": "Admin. Charge Loans",
+	"PriceText": "1 %",
+	"IndividualIndicator": false
+},
+{
+	"BkAcctContrID": "DE53904210810010030023",
+	"BkAcctContrIDSchmID": "BAC.001",
+	"BkAcctContrIDSchmAgcyID": "310",
+	"BusinessSystemID": "F6D_100",
+	"OrdinalNumberValue": 4,
+	"BkContrFinCndnTypeCode": "501510",
+	"BkContrFinCndnTypeName": "Price: Share Disb. Chrge",
+	"PriceText": "2 %",
+	"IndividualIndicator": false
+},
+{
+	"BkAcctContrID": "DE53904210810010030023",
+	"BkAcctContrIDSchmID": "BAC.001",
+	"BkAcctContrIDSchmAgcyID": "310",
+	"BusinessSystemID": "F6D_100",
+	"OrdinalNumberValue": 5,
+	"BkContrFinCndnTypeCode": "500700",
+	"BkContrFinCndnTypeName": "Loan Payoff Activate",
+	"PriceText": "60.00 EUR",
+	"IndividualIndicator": false
+},
+{
+	"BkAcctContrID": "DE53904210810010030023",
+	"BkAcctContrIDSchmID": "BAC.001",
+	"BkAcctContrIDSchmAgcyID": "310",
+	"BusinessSystemID": "F6D_100",
+	"OrdinalNumberValue": 6,
+	"BkContrFinCndnTypeCode": "500700",
+	"BkContrFinCndnTypeName": "Loan Payoff Execute",
+	"PriceText": "50.00 EUR",
+	"IndividualIndicator": false
+},
+{
+	"BkAcctContrID": "DE53904210810010030023",
+	"BkAcctContrIDSchmID": "BAC.001",
+	"BkAcctContrIDSchmAgcyID": "310",
+	"BusinessSystemID": "F6D_100",
+	"OrdinalNumberValue": 7,
+	"BkContrFinCndnTypeCode": "500700",
+	"BkContrFinCndnTypeName": "Loan Payoff Execute- Partial Payoff",
+	"PriceText": "100.00 EUR",
+	"IndividualIndicator": false
+}
+
+]

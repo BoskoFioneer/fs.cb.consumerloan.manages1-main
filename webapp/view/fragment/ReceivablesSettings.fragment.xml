@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ViewSettingsDialog id="oReceivablesTblDialog" title="{i18n>xtit.sort_filter_by}" confirm="handleConfirm" cancel="handleOICancel">
+		<sortItems>
+			<ViewSettingsItem id="dueDateSort" text="{i18n>xfld.paymDueDate}" key="WrkngDayAdjstdBllAmntPymntDue" selected="true"/>
+		</sortItems>
+		<filterItems>
+			<ViewSettingsFilterItem id="ReceivablesFilterDescription" text="{i18n>xfld.recvType}" multiSelect="true" key="Typename">
+				<!-- items to be generated dynamically at run time based on the data available -->
+			</ViewSettingsFilterItem>
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

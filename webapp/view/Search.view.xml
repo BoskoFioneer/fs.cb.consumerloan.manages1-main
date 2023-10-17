@@ -1,0 +1,5 @@
+<!-- Contains Serach Panel Definition -->
+<mvc:View controllerName="fs.cb.consumerloan.manages1.controller.Search" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m">
+	<core:ComponentContainer id="bankAccountContractSearchComponent" name="sap.fs.cb.lib.commons1.components.search.account"
+		propagateModel="false" settings="{bankAccountContractSearchSettings>/}"/>
+</mvc:View>
