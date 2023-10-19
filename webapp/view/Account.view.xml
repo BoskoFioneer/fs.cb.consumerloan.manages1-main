@@ -25,22 +25,15 @@
 							<mvc:XMLView id="agreementPeriodBlock" viewName="fs.cb.consumerloan.manages1.view.AgreementPeriod"/>
 						</blocks>
 					</ObjectPageSubSection>
-					<ObjectPageSubSection id="conditionFixingAgreementSubSection" title="{i18n>xtit.conditionFixingAgreement_sub_section}" mode="Collapsed">
-						<blocks>
+					<ObjectPageSubSection id="idObjectPageSubSection" title="{i18n>xtit.conditionTerm_sub_section}">
+					<blocks>
 							<mvc:XMLView id="conditionFixingAgreementBlock" viewName="fs.cb.consumerloan.manages1.view.ConditionFixingAgreement"/>
 						</blocks>
 						<moreBlocks>
 							<blocks:BlockPriceConditionDetails id="blockPriceConditionDetails" columnLayout="4"/>
 						</moreBlocks>
-					</ObjectPageSubSection>
-					<ObjectPageSubSection id="inpaymentAgreementSubSection" mode="Collapsed" title="{i18n>xtit.inpaymentAgreement_sub_section}">
-						<blocks>
-							<mvc:XMLView id="inpaymentAgreementBlock" viewName="fs.cb.consumerloan.manages1.view.InpaymentAgreement"/>
-						</blocks>
-						<moreBlocks>
-							<blocks:BlockPaymentConditionDetails id="blockPaymentConditionDetails" columnLayout="4"/>
-						</moreBlocks>
-					</ObjectPageSubSection>
+					</ObjectPageSubSection>		
+					
 				</subSections>
 			</ObjectPageSection>
 			<ObjectPageSection id="refAccSection" title="{i18n>xtit.refAccounts_section}" titleUppercase="false">
