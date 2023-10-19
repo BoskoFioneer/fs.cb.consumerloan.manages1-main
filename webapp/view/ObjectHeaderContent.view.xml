@@ -26,10 +26,5 @@
 		<m:Label id="effectiveInterestRateLabel" labelFor="effectiveInterestRateObjectNumber" text="{i18n>xfld.effectiveInterestRate}"/>
 		<m:ObjectNumber emphasized="true" id="effectiveInterestRateObjectNumber" number="{path: 'EffectiveInterestRateText', type:'fs.cb.consumerloan.manages1.model.PercentageType', formatOptions: { decimals: 2, showMeasure: false}}"></m:ObjectNumber>
 	</layout:VerticalLayout>
-	<layout:VerticalLayout class="sapUiForceWidthAuto sapUiLargeMarginEnd sapUiTinyMarginBottom" id="currentBalanceLayout">
-		<m:Label id="effectiveCapitalLabel" labelFor="effectiveCapitalObjectNumber" text="{i18n>xfld.effectiveCapital}"/>
-		<m:ObjectNumber emphasized="true" id="effectiveCapitalObjectNumber"
-			number="{parts: [{path: 'EffectiveCapitalAmount/Content'}, {path: 'EffectiveCapitalAmount/CurrencyCode'}], type: 'sap.ui.model.type.Currency', formatOptions: {showMeasure: false} }"
-			state="{= ${EffectiveCapitalAmount/Content} >= 0 ? 'None' : 'Error' }" unit="{EffectiveCapitalAmount/CurrencyCode}"/>
-	</layout:VerticalLayout>
+	
 </mvc:View>
