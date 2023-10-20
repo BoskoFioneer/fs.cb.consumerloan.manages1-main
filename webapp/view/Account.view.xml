@@ -22,7 +22,7 @@
 				<subSections>
 					<ObjectPageSubSection id="objectSubSection">
 						<blocks>
-							<mvc:XMLView id="objectBlock" viewName="fs.cb.consumerloan.manages1.view.BalanceKeyFigures"/>
+							<mvc:XMLView id="objectBlock" viewName="fs.cb.consumerloan.manages1.view.Object"/>
 						</blocks>
 					</ObjectPageSubSection>
 				</subSections>
@@ -32,7 +32,7 @@
 				<subSections>
 					<ObjectPageSubSection id="classificationSubSection">
 						<blocks>
-							<mvc:XMLView id="classificationBlock" viewName="fs.cb.consumerloan.manages1.view.BalanceKeyFigures"/>
+							<mvc:XMLView id="classificationBlock" viewName="fs.cb.consumerloan.manages1.view.Classification"/>
 						</blocks>
 					</ObjectPageSubSection>
 				</subSections>

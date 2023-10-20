@@ -1,0 +1,58 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:forms="sap.ui.layout.form" xmlns="sap.m" xmlns:u="sap.ui.unified">
+	<!-- Extends the Balance key Figures Container fragment -->
+<core:ExtensionPoint name="ExtObject">
+		<forms:FormContainer id="ObjectDetailsFormContainer" title="{i18n>xtit.capitalObject}">
+			<forms:formElements>
+				<forms:FormElement id="disbursedCapitalFormElement">
+					<forms:label>
+						<Label id="disbursedModelLabel" text="{i18n>xfld.disbursedModel}" labelFor="disbursedModelField"></Label>
+					</forms:label>
+					<forms:fields>
+						<Text id="disbursedModelField"
+							text="{parts:[{path:'DsbursdCptlAmt/Content'}, {path:'DsbursdCptlAmt/CurrencyCode'}], formatter:'.formatter.formatAmountText'}"/>
+					</forms:fields>
+				</forms:FormElement>
+				<forms:FormElement id="objectIdCapitalFormElement">
+					<forms:label>
+						<Label id="objectIdCapitalLabel" text="{i18n>xfld.objectId}" labelFor="objectIdCapitalField"></Label>
+					</forms:label>
+					<forms:fields>
+						<Text id="objectIdCapitalField"
+							text="{parts:[ {path:'ContrctCptlAmt/Content'}, {path:'ContrctCptlAmt/CurrencyCode'} ], formatter:'.formatter.formatAmountText'}"/>
+					</forms:fields>
+				</forms:FormElement>
+                <forms:FormElement id="objectDescCapitalFormElement">
+					<forms:label>
+						<Label id="objectDescCapitalLabel" text="{i18n>xfld.objectDesc}" labelFor="objectDescCapitalField"></Label>
+					</forms:label>
+					<forms:fields>
+						<Text id="objectDescCapitalField"
+							text="{parts:[ {path:'ContrctCptlAmt/Content'}, {path:'ContrctCptlAmt/CurrencyCode'} ], formatter:'.formatter.formatAmountText'}"/>
+					</forms:fields>
+				</forms:FormElement>
+			</forms:formElements>
+		</forms:FormContainer>
+		<forms:FormContainer id="interestChargeAmountFormContainer">
+			<forms:formElements>
+				<forms:FormElement id="agreedMileageFormElement">
+					<forms:label>
+						<Label id="agreedMileageLabel" text="{i18n>xfld.agreedMileage}" labelFor="agreedMileageField"></Label>
+					</forms:label>
+					<forms:fields>
+						<Text id="agreedMileageField"
+							text="{parts:[{path:'OtstndngIntrstAmt/Content'}, {path:'OtstndngIntrstAmt/CurrencyCode'}], formatter:'.formatter.formatAmountText'}"/>
+					</forms:fields>
+				</forms:FormElement>
+				<forms:FormElement id="vinNumberFormElement">
+					<forms:label>
+						<Label id="vinNumberLabel" text="{i18n>xfld.vinNumber}" labelFor="vinNumberField"></Label>
+					</forms:label>
+					<forms:fields>
+						<Text id="vinNumberField"
+							text="{parts:[ {path:'OtstndngChrgsAmt/Content'}, {path:'OtstndngChrgsAmt/CurrencyCode'} ], formatter:'.formatter.formatAmountText'}"/>
+					</forms:fields>
+				</forms:FormElement>
+			</forms:formElements>
+		</forms:FormContainer>
+	</core:ExtensionPoint>
+</core:FragmentDefinition>

@@ -1,0 +1,46 @@
+<mvc:View controllerName="fs.cb.consumerloan.manages1.controller.Classification" xmlns:core="sap.ui.core" xmlns:f="sap.f" xmlns:forms="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+		<l:VerticalLayout id="containerLayout" width="100%">
+		<l:BlockLayout id="BlockLayout" background="{/selectedBackground}">
+    <l:BlockLayoutRow accentCells="Accent3">
+				<l:BlockLayoutCell id="Accent3">
+					<Table
+						id="idProductsTable"
+						inset="false"
+						items="{
+							path: '/ProductCollection',
+							sorter: {
+								path: 'Name'
+							}
+						}">
+						<columns>
+							<Column width="12em"
+                                    hAlign="Left">
+								<Text text="Account Principle" />
+							</Column>
+							
+							<Column hAlign="Right">
+								<Text text="Classification" />
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<ObjectIdentifier title="{Name}" text="{ProductId}" />
+									<Text text="{SupplierName}" />
+									<Text text="{Width} x {Depth} x {Height} {DimUnit}" />
+									<ObjectNumber number="{WeightMeasure}" unit="{WeightUnit}" />
+									<ObjectNumber number="{
+										parts:[{path:'Price'},{path:'CurrencyCode'}],
+										type: 'sap.ui.model.type.Currency'
+										}"
+										unit="{CurrencyCode}" />
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+            </l:BlockLayout>
+	</l:VerticalLayout>
+</mvc:View>

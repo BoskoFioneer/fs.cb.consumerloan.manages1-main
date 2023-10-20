@@ -1,0 +1,12 @@
+<mvc:View controllerName="fs.cb.consumerloan.manages1.controller.Object" xmlns:core="sap.ui.core" xmlns:forms="sap.ui.layout.form"
+	xmlns:layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<forms:Form editable="false" id="ObjectForm" width="100%">
+		<forms:layout>
+			<forms:ResponsiveGridLayout columnsL="2" columnsM="2" id="objectDisplay" labelSpanL="12" labelSpanM="12"/>
+		</forms:layout>
+		<forms:formContainers>
+			<core:Fragment fragmentName="fs.cb.consumerloan.manages1.view.fragment.Object" id="ObjectContainer" type="XML"/>
+		</forms:formContainers>
+		
+	</forms:Form>
+</mvc:View>
