@@ -26,5 +26,16 @@
 				</f:fields>
 			</f:FormElement>
 		</f:FormContainer>
+		<f:FormContainer id="agrPeriodTermContainer">
+			<f:FormElement id="agrPeriodTermElement" label="{i18n>xfld.term}">
+				<f:label>
+					<Label id="agrPeriodTermLabel" text="{i18n>xfld.term}" labelFor="agrPeriodTermField"/>
+				</f:label>
+				<f:fields>
+					<Text id="agrPeriodTermField"
+						text="{parts:[{path:'TermSpecificationEndDate'}], type: 'sap.ui.model.type.Date', formatter:'.formatter.getFormattedDate'}"/>
+				</f:fields>
+			</f:FormElement>
+		</f:FormContainer>
 	</f:Form>
 </mvc:View>

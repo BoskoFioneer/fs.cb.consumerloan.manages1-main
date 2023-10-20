@@ -26,5 +26,8 @@
 		<m:Label id="effectiveInterestRateLabel" labelFor="effectiveInterestRateObjectNumber" text="{i18n>xfld.effectiveInterestRate}"/>
 		<m:ObjectNumber emphasized="true" id="effectiveInterestRateObjectNumber" number="{path: 'EffectiveInterestRateText', type:'fs.cb.consumerloan.manages1.model.PercentageType', formatOptions: { decimals: 2, showMeasure: false}}"></m:ObjectNumber>
 	</layout:VerticalLayout>
-	
+	<layout:VerticalLayout class="sapUiForceWidthAuto sapUiLargeMarginEnd sapUiTinyMarginBottom" id="effectiveStatusLayout">
+		<m:Label id="effectiveStatusLabel" labelFor="effectiveInterestRateObjectNumber" text="{i18n>xfld.status}"/>
+		<m:ObjectNumber emphasized="true" id="effectiveStatusObjectNumber" number="{path: 'EffectiveStatusText', type:'fs.cb.consumerloan.manages1.model.PercentageType', formatOptions: { decimals: 2, showMeasure: false}}"></m:ObjectNumber>
+	</layout:VerticalLayout>
 </mvc:View>
