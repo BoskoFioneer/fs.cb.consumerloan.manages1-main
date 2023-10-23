@@ -4,7 +4,7 @@
 		<f:layout>
 			<f:ResponsiveGridLayout columnsL="3" columnsM="2" id="conditionFixingPeriodDisplay" labelSpanL="12" labelSpanM="12"/>
 		</f:layout>
-		<f:FormContainer id="cfaStartDateContainer">
+	<!-- 	<f:FormContainer id="cfaStartDateContainer">
 			<f:FormElement id="cfaStartDateElement" label="{i18n>xfld.startDate}">
 				<f:label>
 					<Label id="cfaStartDateLabel" text="{i18n>xfld.startDate}" labelFor="cfaStartDateField"/>
@@ -25,6 +25,6 @@
 						text="{parts:[{path:'TermAgreementEndDate'}], type: 'sap.ui.model.type.Date', formatter:'.formatter.getFormattedDate'}"/>
 				</f:fields>
 			</f:FormElement>
-		</f:FormContainer>
+		</f:FormContainer> -->
 	</f:Form>
 </mvc:View>

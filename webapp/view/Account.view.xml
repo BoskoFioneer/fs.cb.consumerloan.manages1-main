@@ -49,17 +49,17 @@
 						<blocks>
 							<mvc:XMLView id="conditionFixingAgreementBlock" viewName="fs.cb.consumerloan.manages1.view.ConditionFixingAgreement"/>
 						</blocks>
-						<moreBlocks>
+						<blocks>
 							<blocks:BlockPriceConditionDetails id="blockPriceConditionDetails" columnLayout="4"/>
-						</moreBlocks>
+						</blocks>
 					</ObjectPageSubSection>
 					<ObjectPageSubSection id="inpaymentAgreementSubSection" mode="Collapsed" title="{i18n>xtit.inpaymentAgreement_sub_section}">
 						<blocks>
 							<mvc:XMLView id="inpaymentAgreementBlock" viewName="fs.cb.consumerloan.manages1.view.InpaymentAgreement"/>
 						</blocks>
-						<moreBlocks>
+						<blocks>
 							<blocks:BlockPaymentConditionDetails id="blockPaymentConditionDetails" columnLayout="4"/>
-						</moreBlocks>
+						</blocks>
 					</ObjectPageSubSection>		
 					
 				</subSections>

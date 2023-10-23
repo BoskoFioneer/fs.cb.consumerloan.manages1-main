@@ -4,7 +4,7 @@
 		<f:layout>
 			<f:ResponsiveGridLayout columnsL="3" columnsM="2" id="inpaymentAgreementPeriodDisplay" labelSpanL="12" labelSpanM="12"/>
 		</f:layout>
-		<f:FormContainer id="ipaStartDateContainer">
+	<!-- 	<f:FormContainer id="ipaStartDateContainer">
 			<f:FormElement id="ipaStartDateElement" label="{i18n>xfld.startDate}">
 				<f:label>
 					<Label id="ipaStartDateLabel" text="{i18n>xfld.startDate}" labelFor="startDatefield"/>
@@ -25,6 +25,6 @@
 						text="{parts:[{path:'IncmngPymntAgrmntEndDt'}], type: 'sap.ui.model.type.Date', formatter:'.formatter.getFormattedDate'}"/>
 				</f:fields>
 			</f:FormElement>
-		</f:FormContainer>
+		</f:FormContainer> -->
 	</f:Form>
 </mvc:View>
