@@ -1,0 +1,11 @@
+[ {
+	
+	"ObjectCptlAmt": {
+		"Model": "BMW i3",
+		"ObjectID": 700000000000004,
+        "ObjectDescription": "My BMW i3",
+        "AgreedMileage": "150.000 km per year",
+        "VINNumber": "WBA3K5C50EKT33030"
+	}
+
+}]

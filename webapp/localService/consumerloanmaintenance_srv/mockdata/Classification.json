@@ -1,0 +1,16 @@
+[
+    {
+	"AccountingPrinciple": "US GAAP",
+		"ClassificationInfo": "FL",
+        "ClassificationDetails": "Finance Leasing"
+},
+{
+	"AccountingPrinciple": "IFRS",
+		"ClassificationInfo": "FL",
+        "ClassificationDetails": "Finance Leasing"
+},
+{
+    "AccountingPrinciple": "Tax",
+		"ClassificationInfo": "FL",
+        "ClassificationDetails": "Finance Leasing"
+}]

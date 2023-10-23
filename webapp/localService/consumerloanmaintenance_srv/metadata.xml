@@ -54,6 +54,8 @@
 					sap:label="Data Element for Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
 				<Property Name="EffectiveInterestRateText" Type="Edm.String" MaxLength="22" sap:unicode="false" sap:label="Effective Interest Rate Text"
 					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="EffectiveStatusText" Type="Edm.String" MaxLength="22" sap:unicode="false" sap:label="Effective Interest Rate Text"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
 				<NavigationProperty Name="PymntTrnsctnInstrctns" Relationship="CONSUMERLOANMAINTENANCE_SRV.ConsumerLoan_PymntTrnsctnInstrctn"
 					FromRole="FromRole_ConsumerLoan_PymntTrnsctnInstrctn" ToRole="ToRole_ConsumerLoan_PymntTrnsctnInstrctn"/>
 			</EntityType>

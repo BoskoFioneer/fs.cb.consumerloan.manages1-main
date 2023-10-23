@@ -7,34 +7,50 @@
 					<Table
 						id="idProductsTable"
 						inset="false"
-						items="{
-							path: '/ProductCollection',
-							sorter: {
-								path: 'Name'
-							}
-						}">
+						items="{ path: '/Classification,
+								sort:{
+									path:'AccountingPrinciple',
+									descending:'false'
+								}'}"
+						>
 						<columns>
 							<Column width="12em"
                                     hAlign="Left">
 								<Text text="Account Principle" />
 							</Column>
 							
+							<Column hAlign="Center">
+								<Text text="Classification Info" />
+							</Column>
 							<Column hAlign="Right">
-								<Text text="Classification" />
+								<Text text="Classification Details" />
 							</Column>
 						</columns>
 						<items>
 							<ColumnListItem>
 								<cells>
-									<ObjectIdentifier title="{Name}" text="{ProductId}" />
-									<Text text="{SupplierName}" />
-									<Text text="{Width} x {Depth} x {Height} {DimUnit}" />
-									<ObjectNumber number="{WeightMeasure}" unit="{WeightUnit}" />
-									<ObjectNumber number="{
-										parts:[{path:'Price'},{path:'CurrencyCode'}],
-										type: 'sap.ui.model.type.Currency'
-										}"
-										unit="{CurrencyCode}" />
+									<ObjectIdentifier title="{AccountingPrinciple}" text="{Classification/AccountingPrinciple}" />
+									<Text text="FL" />
+									<Text text="Finance Leasing" />
+								</cells>
+								
+							</ColumnListItem>
+						</items>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<ObjectIdentifier title="{AccountingPrinciple}" text="IFRS" />
+									<Text text="FL" />
+									<Text text="Finance Leasing" />
+								</cells>
+							</ColumnListItem>
+						</items>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<ObjectIdentifier title="{AccountingPrinciple}" text="Tax" />
+									<Text text="FL" />
+									<Text text="Finance Leasing" />
 								</cells>
 							</ColumnListItem>
 						</items>

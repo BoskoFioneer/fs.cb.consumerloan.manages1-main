@@ -3,13 +3,13 @@
 <core:ExtensionPoint name="ExtObject">
 		<forms:FormContainer id="ObjectDetailsFormContainer" title="{i18n>xtit.capitalObject}">
 			<forms:formElements>
-				<forms:FormElement id="disbursedCapitalFormElement">
+				<forms:FormElement id="objectCapitalFormElement">
 					<forms:label>
 						<Label id="disbursedModelLabel" text="{i18n>xfld.disbursedModel}" labelFor="disbursedModelField"></Label>
 					</forms:label>
 					<forms:fields>
 						<Text id="disbursedModelField"
-							text="{parts:[{path:'DsbursdCptlAmt/Content'}, {path:'DsbursdCptlAmt/CurrencyCode'}], formatter:'.formatter.formatAmountText'}"/>
+							text="{parts:[{path:'ObjectCptlAmt/Model'}, {path:'DsbursdCptlAmt/CurrencyCode'}]}"/>
 					</forms:fields>
 				</forms:FormElement>
 				<forms:FormElement id="objectIdCapitalFormElement">
@@ -18,7 +18,7 @@
 					</forms:label>
 					<forms:fields>
 						<Text id="objectIdCapitalField"
-							text="{parts:[ {path:'ContrctCptlAmt/Content'}, {path:'ContrctCptlAmt/CurrencyCode'} ], formatter:'.formatter.formatAmountText'}"/>
+							text="700000000000004"/>
 					</forms:fields>
 				</forms:FormElement>
                 <forms:FormElement id="objectDescCapitalFormElement">
@@ -27,12 +27,12 @@
 					</forms:label>
 					<forms:fields>
 						<Text id="objectDescCapitalField"
-							text="{parts:[ {path:'ContrctCptlAmt/Content'}, {path:'ContrctCptlAmt/CurrencyCode'} ], formatter:'.formatter.formatAmountText'}"/>
+							text="My BMW i3"/>
 					</forms:fields>
 				</forms:FormElement>
 			</forms:formElements>
 		</forms:FormContainer>
-		<forms:FormContainer id="interestChargeAmountFormContainer">
+		<forms:FormContainer id="interestChargeAmountFormContainer" title="{i18n>xtit.capitalObjectDetails}">
 			<forms:formElements>
 				<forms:FormElement id="agreedMileageFormElement">
 					<forms:label>
@@ -40,7 +40,7 @@
 					</forms:label>
 					<forms:fields>
 						<Text id="agreedMileageField"
-							text="{parts:[{path:'OtstndngIntrstAmt/Content'}, {path:'OtstndngIntrstAmt/CurrencyCode'}], formatter:'.formatter.formatAmountText'}"/>
+							text="150.000 km per year"/>
 					</forms:fields>
 				</forms:FormElement>
 				<forms:FormElement id="vinNumberFormElement">
@@ -49,7 +49,7 @@
 					</forms:label>
 					<forms:fields>
 						<Text id="vinNumberField"
-							text="{parts:[ {path:'OtstndngChrgsAmt/Content'}, {path:'OtstndngChrgsAmt/CurrencyCode'} ], formatter:'.formatter.formatAmountText'}"/>
+							text="WBA3K5C50EKT33030"/>
 					</forms:fields>
 				</forms:FormElement>
 			</forms:formElements>

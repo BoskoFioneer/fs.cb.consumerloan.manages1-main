@@ -12,9 +12,21 @@
 		"Content": 9188.89,
 		"CurrencyCode": "EUR"
 	},
+	"ObjectCptlAmt": {
+		"Model": "BMW i3",
+		"ObjectID": 700000000000004,
+        "ObjectDescription": "My BMW i3",
+        "AgreedMileage": "150.000 km per year",
+        "VINNumber": "WBA3K5C50EKT33030"
+	},
 	"DsbursdCptlAmt": {
 		"Content": 10000.00,
-		"CurrencyCode": "EUR"
+		"CurrencyCode": "EUR",
+		"Model": "BMW i3",
+		"ObjectID": 700000000000004,
+        "ObjectDescription": "My BMW i3",
+        "AgreedMileage": "150.000 km per year",
+        "VINNumber": "WBA3K5C50EKT33030"
 	},
 	"ContrctCptlAmt": {
 		"Content": 10000.00,
@@ -69,9 +81,21 @@
 		"Content": 85000.00,
 		"CurrencyCode": "EUR"
 	},
+	"ObjectCptlAmt": {
+		"Model": "BMW i3",
+		"ObjectID": 700000000000004,
+        "ObjectDescription": "My BMW i3",
+        "AgreedMileage": "150.000 km per year",
+        "VINNumber": "WBA3K5C50EKT33030"
+	},
 	"DsbursdCptlAmt": {
 		"Content": 20000.00,
-		"CurrencyCode": "EUR"
+		"CurrencyCode": "EUR",
+		"Model": "BMW i3",
+		"ObjectID": 700000000000004,
+        "ObjectDescription": "My BMW i3",
+        "AgreedMileage": "150.000 km per year",
+        "VINNumber": "WBA3K5C50EKT33030"
 	},
 	"ContrctCptlAmt": {
 		"Content": 30000.00,
