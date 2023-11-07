@@ -25,7 +25,7 @@
 						<items>
 							<ColumnListItem>
 								<cells>
-									<ObjectIdentifier title="{AccountingPrinciple}" text="AccountingPrinciple" />
+									<ObjectIdentifier title="{AccountingPrinciple}" text="US GAAP" />
 									<Text text="FL" />
 									<Text text="Finance Leasing" />
 								</cells>
