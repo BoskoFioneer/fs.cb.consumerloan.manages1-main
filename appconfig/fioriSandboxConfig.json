@@ -1,0 +1,9 @@
+{
+    "applications": {
+        "BankCustomer-display": {
+            "additionalInformation": "SAPUI5.Component=fs.cb.bankcustomer.displays1",
+            "applicationType": "URL",
+            "url": "../resources/fs.cb.bankcustomer.displays1"
+        }
+    }
+}

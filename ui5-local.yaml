@@ -56,3 +56,13 @@ server:
       configuration:
         component: fs.cb.consumerloan.manages1
         ui5Theme: sap_fiori_3
+    - name: fiori-tools-servestatic
+      afterMiddleware: compression
+      configuration:
+        paths:
+          - path: /resources/fs.cb.bankcustomer.displays1
+            src: ..\GetLeaseBP\webapp
+          - path: /appconfig
+            src: appconfig
+          - path: /resources/fs.cb.bankcustomer.displays1
+            src: ..\..\Leasing\GetLeaseBP\webapp

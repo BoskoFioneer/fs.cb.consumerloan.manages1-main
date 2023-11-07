@@ -7,11 +7,7 @@
 					<Table
 						id="idProductsTable"
 						inset="false"
-						items="{ path: '/Classification,
-								sort:{
-									path:'AccountingPrinciple',
-									descending:'false'
-								}'}"
+						
 						>
 						<columns>
 							<Column width="12em"
@@ -29,7 +25,7 @@
 						<items>
 							<ColumnListItem>
 								<cells>
-									<ObjectIdentifier title="{AccountingPrinciple}" text="{Classification/AccountingPrinciple}" />
+									<ObjectIdentifier title="{AccountingPrinciple}" text="AccountingPrinciple" />
 									<Text text="FL" />
 									<Text text="Finance Leasing" />
 								</cells>

@@ -13,6 +13,7 @@
 				<Property Name="BkAcctIdfgElmnts" Type="CONSUMERLOANMAINTENANCE_SRV.CTBkAcctIdfgElmnts" Nullable="false"/>
 				<Property Name="EffectiveCapitalAmount" Type="CONSUMERLOANMAINTENANCE_SRV.CTAmount" Nullable="false"/>
 				<Property Name="DsbursdCptlAmt" Type="CONSUMERLOANMAINTENANCE_SRV.CTAmount" Nullable="false"/>
+				<Property Name="ObjectCptlAmt" Type="CONSUMERLOANMAINTENANCE_SRV.CTAmount" Nullable="false"/>
 				<Property Name="ContrctCptlAmt" Type="CONSUMERLOANMAINTENANCE_SRV.CTAmount" Nullable="false"/>
 				<Property Name="OtstndngIntrstAmt" Type="CONSUMERLOANMAINTENANCE_SRV.CTAmount" Nullable="false"/>
 				<Property Name="OtstndngChrgsAmt" Type="CONSUMERLOANMAINTENANCE_SRV.CTAmount" Nullable="false"/>

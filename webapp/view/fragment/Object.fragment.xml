@@ -9,7 +9,7 @@
 					</forms:label>
 					<forms:fields>
 						<Text id="disbursedModelField"
-							text="{parts:[{path:'ObjectCptlAmt/Model'}, {path:'DsbursdCptlAmt/CurrencyCode'}]}"/>
+							text="BMW i3"/>
 					</forms:fields>
 				</forms:FormElement>
 				<forms:FormElement id="objectIdCapitalFormElement">
